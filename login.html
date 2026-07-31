@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login · Stackly GovServices</title>
+  <meta name="description" content="Login to your Stackly GovServices account. Access government services, track applications, and manage your digital profile." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+<div class="page-loader" id="page-loader"><div class="loader-logo">Stack<span>ly</span></div><div class="loader-bar"><div class="loader-bar-fill"></div></div></div>
+
+<div class="auth-wrapper">
+  <div class="auth-bg-orb-1"></div>
+  <div class="auth-bg-orb-2"></div>
+  <div class="particles" id="auth-particles"></div>
+
+  <!-- Back to home -->
+  <a href="index.html" style="position:fixed;top:24px;left:24px;display:flex;align-items:center;gap:8px;font-size:14px;color:var(--gray-400);transition:var(--transition);z-index:10;" onmouseenter="this.style.color='var(--gold)'" onmouseleave="this.style.color='var(--gray-400)'">← Back to Home</a>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1000px;width:100%;position:relative;z-index:1;">
+    <!-- Left Side Info -->
+    <div style="display:none;" class="auth-info">
+    </div>
+
+    <!-- Left branding (desktop) -->
+    <div data-aos="fade-right" style="display:flex;flex-direction:column;gap:24px;">
+      <!-- Brand -->
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:8px;">
+        <div style="width:56px;height:56px;background:var(--grad-gold);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--navy-dark);font-weight:900;font-family:'Outfit',sans-serif;box-shadow:var(--shadow-gold);">S</div>
+        <div>
+          <div style="font-family:'Outfit',sans-serif;font-size:24px;font-weight:900;">Stack<span style="color:var(--gold);">ly</span></div>
+          <div style="font-size:13px;color:var(--gray-400);">Government Services Portal</div>
+        </div>
+      </div>
+
+      <div>
+        <h2 style="font-size:36px;font-weight:900;line-height:1.2;margin-bottom:16px;">Your Digital Gateway to <span style="color:var(--gold);">Government Services</span></h2>
+        <p style="font-size:15px;color:var(--gray-400);line-height:1.7;">Access 500+ government services, track your applications, and manage documents — all from one secure account.</p>
+      </div>
+
+      <!-- Benefits -->
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="display:flex;align-items:center;gap:14px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:12px;padding:16px 20px;">
+          <div style="width:44px;height:44px;border-radius:12px;background:rgba(245,158,11,0.15);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">🚀</div>
+          <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">Instant Access</div><div style="font-size:12px;color:var(--gray-500);">Apply for any service in under 5 minutes</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:12px;padding:16px 20px;">
+          <div style="width:44px;height:44px;border-radius:12px;background:rgba(37,99,235,0.15);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">📲</div>
+          <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">Real-Time Tracking</div><div style="font-size:12px;color:var(--gray-500);">Get SMS & email updates on every application</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:14px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:12px;padding:16px 20px;">
+          <div style="width:44px;height:44px;border-radius:12px;background:rgba(16,185,129,0.15);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;">🔒</div>
+          <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">Bank-Grade Security</div><div style="font-size:12px;color:var(--gray-500);">256-bit SSL · Aadhaar-backed authentication</div></div>
+        </div>
+      </div>
+
+      <!-- Security note -->
+      <div style="display:flex;align-items:center;gap:10px;padding:14px 20px;background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.2);border-radius:10px;">
+        <span style="font-size:18px;">⚠</span>
+        <p style="font-size:12px;color:var(--gray-400);line-height:1.5;">Never share your OTP, password, or Aadhaar details with anyone. GovServices will <strong style="color:var(--gold);">never</strong> ask for this information.</p>
+      </div>
+    </div>
+
+    <!-- Auth Card -->
+    <div class="auth-card" style="margin:0;">
+      <div class="auth-logo">
+        <div class="logo-icon">S</div>
+        <div class="auth-logo-text">Stack<span>ly</span></div>
+      </div>
+      <h2 class="auth-title">Welcome Back 👋</h2>
+      <p class="auth-subtitle">Sign in to your GovServices account</p>
+
+      <!-- Role Selector -->
+      <div style="margin-bottom:8px;"><div style="font-size:12px;font-weight:700;color:var(--gray-400);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Login as</div></div>
+      <div class="role-tabs" style="margin-bottom:24px;">
+        <div class="role-tab active" data-role="citizen">👤 Citizen</div>
+        <div class="role-tab" data-role="admin">🛡 Admin</div>
+      </div>
+
+      <form id="login-form">
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" id="login-email" class="form-input" placeholder="citizen@example.com" required />
+        </div>
+        <div class="form-group" style="position:relative;">
+          <label class="form-label">Password</label>
+          <input type="password" id="login-password" class="form-input" placeholder="Enter your password" required />
+          <button type="button" onclick="togglePwd('login-password',this)" style="position:absolute;right:14px;bottom:14px;background:none;border:none;cursor:pointer;font-size:16px;color:var(--gray-500);">👁</button>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;">
+          <label style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--gray-400);cursor:pointer;"><input type="checkbox" style="accent-color:var(--gold);"/> Remember me</label>
+          <a href="#" style="font-size:13px;color:var(--gold);font-weight:600;">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:16px;">Sign In to GovServices</button>
+      </form>
+
+      <div class="auth-divider"><span>or continue with</span></div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;">
+        <button onclick="window.location.href='404.html'" class="btn btn-outline btn-sm" style="justify-content:center;gap:8px;">🪪 Aadhaar OTP</button>
+        <button onclick="window.location.href='404.html'" class="btn btn-outline btn-sm" style="justify-content:center;gap:8px;">📱 DigiLocker</button>
+      </div>
+
+      <div class="auth-form-footer">
+        Don't have an account? <a href="register.html">Register for free →</a>
+      </div>
+
+      <!-- Demo credentials -->
+      <div style="margin-top:20px;padding:14px;background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.15);border-radius:10px;">
+        <div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px;letter-spacing:1px;text-transform:uppercase;">Demo Credentials</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <div style="background:var(--glass-bg);padding:10px;border-radius:8px;">
+            <div style="font-size:10px;color:var(--gray-500);margin-bottom:4px;">👤 Citizen</div>
+            <div style="font-size:11px;color:var(--gray-300);">Register first to create account</div>
+          </div>
+          <div style="background:var(--glass-bg);padding:10px;border-radius:8px;">
+            <div style="font-size:10px;color:var(--gray-500);margin-bottom:4px;">🛡 Admin</div>
+            <div style="font-size:11px;color:var(--gray-300);">admin@govservices.in<br/>Admin@123</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function togglePwd(id, btn) {
+  const inp = document.getElementById(id);
+  if (inp.type === 'password') { inp.type = 'text'; btn.textContent = '🙈'; }
+  else { inp.type = 'password'; btn.textContent = '👁'; }
+}
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

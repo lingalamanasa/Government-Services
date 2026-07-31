@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us · Stackly GovServices</title>
+  <meta name="description" content="Contact Stackly GovServices for support, feedback, or partnership enquiries. Toll-free helpline: 1800-111-555. Available Mon-Sat 8AM to 8PM." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <style>
+    .section { padding: 30px 0 !important; }
+    .page-hero { padding: 120px 0 60px !important; }
+  </style>
+</head>
+<body>
+<div class="page-loader" id="page-loader"><div class="loader-logo">Stack<span>ly</span></div><div class="loader-bar"><div class="loader-bar-fill"></div></div></div>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo"><div class="logo-icon">S</div><div class="logo-text">Stack<span>ly</span> <small style="font-size:11px;font-weight:500;color:var(--gray-400)">GovServices</small></div></a>
+    <ul class="navbar-nav">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+    <div class="navbar-actions">
+      <div style="display:flex;gap:12px;">
+        <a href="login.html" class="btn-nav-login">Login</a>
+        <a href="register.html" class="btn-nav-login">Register</a>
+      </div>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <a href="index.html" class="nav-link">🏠 Home</a><a href="about.html" class="nav-link">ℹ About</a><a href="services.html" class="nav-link">⚙ Services</a><a href="blog.html" class="nav-link">📰 Blog</a><a href="contact.html" class="nav-link">📞 Contact</a>
+  </div>
+  <div style="display:flex;gap:12px;margin-top:16px;">
+    <a href="login.html" class="btn-nav-login" style="flex:1;text-align:center;">Login</a>
+    <a href="register.html" class="btn-nav-login" style="flex:1;text-align:center;">Register</a>
+  </div>
+</div>
+
+<!-- SECTION 1: HERO -->
+<section class="page-hero" style="background: linear-gradient(135deg, rgba(5,13,26,0.9), rgba(10,22,40,0.85)), url('assets/images/gov_modern_building.webp') center/cover no-repeat;position:relative;overflow:hidden;">
+  <div class="hero-bg-orb hero-bg-orb-1" style="width:400px;height:400px;top:-100px;right:-100px;opacity:0.3;"></div>
+  <div class="particles" id="hero-particles"></div>
+  <div class="container page-hero-content" style="position:relative;z-index:2;">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Contact Us</span></div>
+    <div class="section-label">Get in Touch</div>
+    <h1>We're Here to <span class="text-gold">Help You</span></h1>
+    <p>Have a question about a service, an application, or need technical support? Our dedicated team is available 24/7 to assist citizens across India.</p>
+  </div>
+</section>
+
+<!-- SECTION 3: CONTACT FORM + QUICK LINKS -->
+<section class="section" style="background:var(--navy);padding-top:0;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
+      <!-- Contact Form -->
+      <div>
+        <div class="section-label">Send a Message</div>
+        <h2 class="section-title" style="font-size:36px;">How Can We <span>Help?</span></h2>
+        <p style="color:var(--gray-400);font-size:15px;margin-bottom:32px;line-height:1.7;">Fill out the form below and we'll connect you with the right department. For urgent matters, please call our helpline.</p>
+        <form id="contact-form" style="background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-xl);padding:36px;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div class="form-group"><label class="form-label">Full Name *</label><input type="text" class="form-input" placeholder="Ramesh Kumar" required /></div>
+            <div class="form-group"><label class="form-label">Mobile Number *</label><input type="tel" class="form-input" placeholder="+91 98765 43210" required /></div>
+          </div>
+          <div class="form-group"><label class="form-label">Email Address *</label><input type="email" class="form-input" placeholder="ramesh@example.com" required /></div>
+          <div class="form-group">
+            <label class="form-label">Subject / Department</label>
+            <select class="form-input form-select">
+              <option value="">Select Department</option>
+              <option>Passport & Travel Documents</option>
+              <option>Aadhaar Services</option>
+              <option>Health & Insurance</option>
+              <option>Education & Scholarships</option>
+              <option>Agriculture Schemes</option>
+              <option>Income Tax & Finance</option>
+              <option>Transport & Driving Licence</option>
+              <option>Property & Housing</option>
+              <option>Technical Support</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group"><label class="form-label">Application Reference (if any)</label><input type="text" class="form-input" placeholder="e.g. PP2024891" /></div>
+          <div class="form-group"><label class="form-label">Message *</label><textarea class="form-input form-textarea" placeholder="Describe your issue or query in detail..." required></textarea></div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+            <input type="checkbox" id="consent" style="accent-color:var(--gold);" required />
+            <label for="consent" style="font-size:13px;color:var(--gray-400);">I consent to Stackly GovServices storing my enquiry data as per the Privacy Policy</label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">📤 Send Message</button>
+        </form>
+      </div>
+
+      <!-- Quick Help + Locations -->
+      <div>
+        <div style="border-radius:var(--radius-lg);overflow:hidden;margin-bottom:32px;height:240px;">
+          <img src="assets/images/contact_helpdesk.webp" alt="Helpdesk Representative" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <div class="section-label">Quick Help</div>
+        <h2 class="section-title" style="font-size:36px;">Common <span>Queries</span></h2>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:40px;">
+          <a href="javascript:void(0)" style="display:flex;align-items:center;gap:16px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:12px;padding:18px 20px;transition:var(--transition);" onmouseenter="this.style.borderColor='rgba(245,158,11,0.3)'" onmouseleave="this.style.borderColor='var(--glass-border)'">
+            <span style="font-size:24px;">📋</span>
+            <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">Application Status Check</div><div style="font-size:12px;color:var(--gray-500);">Track your submitted applications</div></div>
+            <span style="margin-left:auto;color:var(--gold);">→</span>
+          </a>
+          <a href="javascript:void(0)" style="display:flex;align-items:center;gap:16px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:12px;padding:18px 20px;transition:var(--transition);" onmouseenter="this.style.borderColor='rgba(245,158,11,0.3)'" onmouseleave="this.style.borderColor='var(--glass-border)'">
+            <span style="font-size:24px;">🔑</span>
+            <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">Password Reset</div><div style="font-size:12px;color:var(--gray-500);">Reset your account password securely</div></div>
+            <span style="margin-left:auto;color:var(--gold);">→</span>
+          </a>
+          <a href="javascript:void(0)" style="display:flex;align-items:center;gap:16px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:12px;padding:18px 20px;transition:var(--transition);" onmouseenter="this.style.borderColor='rgba(245,158,11,0.3)'" onmouseleave="this.style.borderColor='var(--glass-border)'">
+            <span style="font-size:24px;">💳</span>
+            <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">Payment Issues</div><div style="font-size:12px;color:var(--gray-500);">Refunds, failed payments, and receipts</div></div>
+            <span style="margin-left:auto;color:var(--gold);">→</span>
+          </a>
+          <a href="javascript:void(0)" style="display:flex;align-items:center;gap:16px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:12px;padding:18px 20px;transition:var(--transition);" onmouseenter="this.style.borderColor='rgba(245,158,11,0.3)'" onmouseleave="this.style.borderColor='var(--glass-border)'">
+            <span style="font-size:24px;">📄</span>
+            <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">Document Upload Help</div><div style="font-size:12px;color:var(--gray-500);">Supported formats and size limits</div></div>
+            <span style="margin-left:auto;color:var(--gold);">→</span>
+          </a>
+          <a href="javascript:void(0)" style="display:flex;align-items:center;gap:16px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:12px;padding:18px 20px;transition:var(--transition);" onmouseenter="this.style.borderColor='rgba(245,158,11,0.3)'" onmouseleave="this.style.borderColor='var(--glass-border)'">
+            <span style="font-size:24px;">🔒</span>
+            <div><div style="font-size:14px;font-weight:600;margin-bottom:2px;">Account Security</div><div style="font-size:12px;color:var(--gray-500);">Report suspicious activity or account breach</div></div>
+            <span style="margin-left:auto;color:var(--gold);">→</span>
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div style="background:linear-gradient(135deg,rgba(37,99,235,0.12),rgba(245,158,11,0.06));border:1px solid rgba(37,99,235,0.2);border-radius:var(--radius-lg);padding:28px;">
+          <h4 style="font-size:18px;font-weight:700;margin-bottom:16px;">Follow Us for Updates</h4>
+          <p style="font-size:13px;color:var(--gray-400);margin-bottom:20px;">Stay connected on social media for real-time government updates, scheme alerts, and emergency notifications.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="javascript:void(0)" style="display:flex;align-items:center;gap:8px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:10px;padding:10px 16px;font-size:13px;font-weight:600;transition:var(--transition);" onmouseenter="this.style.borderColor='rgba(245,158,11,0.3)'" onmouseleave="this.style.borderColor='var(--glass-border)'">🐦 Twitter / X</a>
+            <a href="javascript:void(0)" style="display:flex;align-items:center;gap:8px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:10px;padding:10px 16px;font-size:13px;font-weight:600;transition:var(--transition);" onmouseenter="this.style.borderColor='rgba(245,158,11,0.3)'" onmouseleave="this.style.borderColor='var(--glass-border)'">📘 Facebook</a>
+            <a href="javascript:void(0)" style="display:flex;align-items:center;gap:8px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:10px;padding:10px 16px;font-size:13px;font-weight:600;transition:var(--transition);" onmouseenter="this.style.borderColor='rgba(245,158,11,0.3)'" onmouseleave="this.style.borderColor='var(--glass-border)'">▶ YouTube</a>
+            <a href="javascript:void(0)" style="display:flex;align-items:center;gap:8px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:10px;padding:10px 16px;font-size:13px;font-weight:600;transition:var(--transition);" onmouseenter="this.style.borderColor='rgba(245,158,11,0.3)'" onmouseleave="this.style.borderColor='var(--glass-border)'">📸 Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: OFFICE LOCATIONS (Bento) -->
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Regional Offices</div>
+      <h2 class="section-title">500+ Service <span>Centres Nationwide</span></h2>
+      <p class="section-subtitle">Visit your nearest citizen service centre for in-person assistance</p>
+    </div>
+    <div class="bento-grid">
+      <div class="bento-col-4" style="background:var(--glass-bg);border:1px solid rgba(245,158,11,0.2);border-radius:var(--radius-lg);padding:28px;background:linear-gradient(135deg,rgba(245,158,11,0.08),transparent);">
+        <div style="font-size:36px;margin-bottom:16px;">🏛</div>
+        <div style="font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px;">North Zone</div>
+        <div style="font-weight:700;font-size:18px;margin-bottom:8px;">New Delhi (HQ)</div>
+        <p style="font-size:13px;color:var(--gray-400);line-height:1.7;margin-bottom:16px;">Electronics Niketan, 6 CGO Complex, Lodhi Road, New Delhi – 110003</p>
+        <div style="font-size:13px;color:var(--gray-300);">📞 011-2430-1851</div>
+      </div>
+      <div class="bento-col-4" style="background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:28px;">
+        <div style="font-size:36px;margin-bottom:16px;">🌆</div>
+        <div style="font-size:11px;font-weight:700;color:var(--blue-light);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px;">West Zone</div>
+        <div style="font-weight:700;font-size:18px;margin-bottom:8px;">Mumbai Regional</div>
+        <p style="font-size:13px;color:var(--gray-400);line-height:1.7;margin-bottom:16px;">Plot C-20, MIDC, Andheri East, Mumbai – 400093</p>
+        <div style="font-size:13px;color:var(--gray-300);">📞 022-2821-5600</div>
+      </div>
+      <div class="bento-col-4" style="background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:28px;">
+        <div style="font-size:36px;margin-bottom:16px;">🌴</div>
+        <div style="font-size:11px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px;">South Zone</div>
+        <div style="font-weight:700;font-size:18px;margin-bottom:8px;">Chennai Regional</div>
+        <p style="font-size:13px;color:var(--gray-400);line-height:1.7;margin-bottom:16px;">800, Anna Salai, Thousand Lights, Chennai – 600002</p>
+        <div style="font-size:13px;color:var(--gray-300);">📞 044-2851-0000</div>
+      </div>
+      <div class="bento-col-6" style="background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:28px;display:flex;gap:24px;align-items:center;">
+        <div style="font-size:52px;">🗓</div>
+        <div><div style="font-weight:700;font-size:18px;margin-bottom:8px;">Book an Appointment</div><p style="font-size:14px;color:var(--gray-400);line-height:1.7;margin-bottom:16px;">Skip the queue. Book a slot online for in-person service at any of our 500+ centres.</p><a href="javascript:void(0)" class="btn btn-primary btn-sm">Book Slot →</a></div>
+      </div>
+      <div class="bento-col-6" style="background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:28px;display:flex;gap:24px;align-items:center;">
+        <div style="font-size:52px;">⚡</div>
+        <div><div style="font-weight:700;font-size:18px;margin-bottom:8px;">Instant Kiosk Locator</div><p style="font-size:14px;color:var(--gray-400);line-height:1.7;margin-bottom:16px;">Locate automated DigiKiosks near metro stations and postal hubs open 24/7.</p><a href="javascript:void(0)" class="btn btn-outline btn-sm">Locate Kiosk →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: INTERACTIVE MAP & LOCATION FINDER -->
+<section class="section" style="background:var(--navy-dark);padding-top:0;">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:32px;">
+      <div class="section-label">Interactive Map</div>
+      <h2 class="section-title">Find Our <span>HQ & Service Centres</span></h2>
+      <p class="section-subtitle">Navigate through our primary citizen service hubs across India</p>
+    </div>
+    
+    <!-- Map Control Tabs -->
+    <div style="display:flex;justify-content:center;gap:12px;margin-bottom:24px;flex-wrap:wrap;">
+      <button class="btn btn-primary btn-sm" onclick="document.getElementById('gov-map-frame').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112104.91404177726!2d77.12658888796851!3d28.59114754593466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1714567890123!5m2!1sen!2sin'">📍 New Delhi HQ</button>
+      <button class="btn btn-outline btn-sm" onclick="document.getElementById('gov-map-frame').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.742392812!2d72.8687!3d19.1176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA3JzAzLjQiTiA3MsKwNTInMDcuMyJF!5e0!3m2!1sen!2sin!4v1714567890124!5m2!1sen!2sin'">🏙 Mumbai Regional</button>
+      <button class="btn btn-outline btn-sm" onclick="document.getElementById('gov-map-frame').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.58912!2d80.2612!3d13.0604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAzJzM3LjQiTiA4MMKwMTUnNDAuMyJF!5e0!3m2!1sen!2sin!4v1714567890125!5m2!1sen!2sin'">🌴 Chennai Regional</button>
+      <button class="btn btn-outline btn-sm" onclick="document.getElementById('gov-map-frame').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9012!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzE3LjciTiA3N8KwMzUnNDAuNiJF!5e0!3m2!1sen!2sin!4v1714567890126!5m2!1sen!2sin'">🚀 Bengaluru Tech Hub</button>
+    </div>
+
+    <!-- Container for Map -->
+    <div style="background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-xl);overflow:hidden;height:450px;position:relative;box-shadow:var(--shadow-lg);">
+      <iframe id="gov-map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112104.91404177726!2d77.12658888796851!3d28.59114754593466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1714567890123!5m2!1sen!2sin" width="100%" height="100%" style="border:0; filter: grayscale(80%) invert(90%) hue-rotate(180deg);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      <!-- Overlay Badge -->
+      <div style="position:absolute;bottom:20px;left:20px;background:rgba(5,13,26,0.9);border:1px solid var(--gold);border-radius:var(--radius-md);padding:12px 18px;backdrop-filter:blur(10px);display:flex;align-items:center;gap:12px;">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--success);box-shadow:0 0 10px var(--success);animation:pulse-glow 2s infinite;"></span>
+        <div>
+          <div style="font-size:12px;font-weight:700;color:var(--white);">HQ Service Center Open</div>
+          <div style="font-size:10px;color:var(--gray-400);">Mon - Sat: 9:00 AM - 6:00 PM IST</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: FAQ -->
+<section class="section" style="background:var(--navy);">
+  <div class="container">
+    <div style="max-width:800px;margin:0 auto;">
+      <div class="text-center">
+        <div class="section-label">Support FAQ</div>
+        <h2 class="section-title">Common <span>Support Questions</span></h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:16px;" data-expand-group="contact-faq">
+        <div class="expand-card"><div class="expand-card-header"><div class="expand-card-title">What is the response time for email enquiries?</div><div class="expand-icon">+</div></div><div class="expand-card-body"><p style="font-size:14px;color:var(--gray-400);line-height:1.7;">Email enquiries are typically answered within 24 hours on business days (Monday to Saturday). For urgent matters, please call our toll-free number 1800-111-555.</p></div></div>
+        <div class="expand-card"><div class="expand-card-header"><div class="expand-card-title">Can I escalate my grievance if not resolved?</div><div class="expand-icon">+</div></div><div class="expand-card-body"><p style="font-size:14px;color:var(--gray-400);line-height:1.7;">Yes. If your grievance is not resolved within 7 working days, you can escalate it to the Nodal Grievance Officer or file a complaint on the CPGRAMS (Centralized Public Grievance Redress and Monitoring System) portal.</p></div></div>
+        <div class="expand-card"><div class="expand-card-header"><div class="expand-card-title">How do I report a fraudulent service or impersonation?</div><div class="expand-icon">+</div></div><div class="expand-card-body"><p style="font-size:14px;color:var(--gray-400);line-height:1.7;">Report immediately to <strong>fraud@govservices.in</strong> or call 1800-111-999 (Fraud Helpline). Do NOT share OTPs, passwords or Aadhaar details with anyone claiming to be our agent.</p></div></div>
+        <div class="expand-card"><div class="expand-card-header"><div class="expand-card-title">Is there a mobile app for Stackly GovServices?</div><div class="expand-icon">+</div></div><div class="expand-card-body"><p style="font-size:14px;color:var(--gray-400);line-height:1.7;">Yes! Our app is available on Google Play Store and Apple App Store. Search "GovServices Stackly" and download for free. Available in 22 Indian languages.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-wrap"><div style="width:44px;height:44px;background:var(--grad-gold);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--navy-dark);font-weight:900;font-family:'Outfit',sans-serif;">S</div><span style="font-family:'Outfit',sans-serif;font-size:20px;font-weight:800;">Stack<span class="text-gold">ly</span> GovServices</span></div>
+        <p>India's premier digital government services portal. 1800-111-555 | help@govservices.in</p>
+        <div class="footer-social"><a href="404.html" class="social-btn" title="Twitter">🐦</a><a href="404.html" class="social-btn" title="Facebook">📘</a><a href="404.html" class="social-btn" title="Instagram">📸</a><a href="404.html" class="social-btn" title="YouTube">▶</a></div>
+      </div>
+      <div class="footer-col"><h4>Navigation</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div></div>
+      <div class="footer-col"><h4>Services</h4><div class="footer-links"><a href="javascript:void(0)">Passport</a><a href="javascript:void(0)">Aadhaar</a><a href="javascript:void(0)">Health</a><a href="javascript:void(0)">Education</a><a href="javascript:void(0)">Agriculture</a></div></div>
+      <div class="footer-col"><h4>Support</h4><div class="footer-links"><a href="javascript:void(0)">Help Center</a><a href="javascript:void(0)">FAQs</a><a href="javascript:void(0)">Privacy Policy</a><a href="javascript:void(0)">Terms</a><a href="login.html">Login</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Stackly GovServices. All rights reserved.</span><span>Made with ❤ for Digital India</span></div>
+  </div>
+</footer>
+<div class="scroll-top" id="scroll-top">↑</div>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

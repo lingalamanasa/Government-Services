@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services &mdash; Stackly GovServices</title>
+  <meta name="description" content="Browse all 500+ government services available online. Passports, Aadhaar, driving licences, health cards, tax filing, property registration and more." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <style>
+    .section { padding: 30px 0 !important; }
+    .page-hero { padding: 120px 0 60px !important; }
+  </style>
+</head>
+<body>
+<div class="page-loader" id="page-loader"><div class="loader-logo">Stack<span>ly</span></div><div class="loader-bar"><div class="loader-bar-fill"></div></div></div>
+
+<nav class="navbar scrolled" id="navbar">
+<div class="navbar-inner">
+    <a href="index.html" class="navbar-logo"><div class="logo-icon">S</div><div class="logo-text">Stack<span>ly</span> <small style="font-size:11px;font-weight:500;color:var(--gray-400)">GovServices</small></div></a>
+    <ul class="navbar-nav">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="services.html" class="nav-link active">Services</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="navbar-actions">
+      <div style="display:flex;gap:12px;">
+        <a href="login.html" class="btn-nav-login">Login</a>
+        <a href="register.html" class="btn-nav-login">Register</a>
+      </div>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <a href="index.html" class="nav-link">ðŸ  Home</a><a href="about.html" class="nav-link">ℹ About</a><a href="services.html" class="nav-link">⚙ Services</a><a href="blog.html" class="nav-link">📰 Blog</a><a href="contact.html" class="nav-link">📞 Contact</a>
+  </div>
+  <div style="display:flex;gap:12px;margin-top:16px;">
+    <a href="login.html" class="btn-nav-login" style="flex:1;text-align:center;">Login</a>
+    <a href="register.html" class="btn-nav-login" style="flex:1;text-align:center;">Register</a>
+  </div>
+</div>
+
+<!-- SECTION 1: HERO -->
+<section class="page-hero" style="background: linear-gradient(135deg, rgba(5,13,26,0.9), rgba(10,22,40,0.85)), url('assets/images/gov_modern_building.webp') center/cover no-repeat;">
+  <div class="container page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Services</span></div>
+    <div class="section-label">All Services</div>
+    <h1>500+ Services, <span class="text-gold">One Platform</span></h1>
+    <p>From identity documents to agriculture support — access every government service online, securely, 24/7.</p>
+    <!-- Search bar -->
+    <div style="margin-top:28px;display:flex;gap:12px;max-width:540px;">
+      <input type="text" placeholder="ðŸ”  Search for a service..." class="form-input" style="flex:1;" />
+      <button class="btn btn-primary" onclick="this.closest('form')?.submit()">Search</button>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: HORIZONTAL SCROLL · Category Cards -->
+<section class="section" style="background:var(--navy);position:relative;overflow:hidden;">
+  <div class="hero-bg-orb hero-bg-orb-2" style="width:600px;height:600px;top:-100px;right:-100px;opacity:0.2;"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <div class="text-center">
+      <div class="section-label">Browse by Category</div>
+      <h2 class="section-title">20 Service <span>Categories</span></h2>
+    </div>
+  </div>
+  <div class="h-scroll-container" style="padding:16px max(24px, calc((100vw - 1280px)/2));">
+    <div class="h-scroll-track">
+      <div class="service-cat-card" style="background:linear-gradient(135deg,rgba(5,13,26,0.5),rgba(10,22,40,0.85)), url('assets/images/gov_service_1.webp') center/cover;"><div class="service-cat-name" style="color:var(--gold);font-size:18px;">Identity</div><div class="service-cat-count" style="color:rgba(255,255,255,0.8);">8 services</div></div>
+      <div class="service-cat-card" style="background:linear-gradient(135deg,rgba(5,13,26,0.5),rgba(10,22,40,0.85)), url('assets/images/gov_service_2.webp') center/cover;"><div class="service-cat-name" style="color:var(--gold);font-size:18px;">Travel</div><div class="service-cat-count" style="color:rgba(255,255,255,0.8);">6 services</div></div>
+      <div class="service-cat-card" style="background:linear-gradient(135deg,rgba(5,13,26,0.5),rgba(10,22,40,0.85)), url('assets/images/gov_service_3.webp') center/cover;border-color:rgba(245,158,11,0.3);"><div class="service-cat-name" style="color:var(--gold);font-size:18px;">Health</div><div class="service-cat-count" style="color:rgba(255,255,255,0.8);">12 services</div></div>
+      <div class="service-cat-card" style="background:linear-gradient(135deg,rgba(5,13,26,0.5),rgba(10,22,40,0.85)), url('assets/images/gov_service_4.webp') center/cover;"><div class="service-cat-name" style="color:var(--gold);font-size:18px;">Education</div><div class="service-cat-count" style="color:rgba(255,255,255,0.8);">18 services</div></div>
+      <div class="service-cat-card" style="background:linear-gradient(135deg,rgba(5,13,26,0.5),rgba(10,22,40,0.85)), url('assets/images/gov_service_5.webp') center/cover;"><div class="service-cat-name" style="color:var(--gold);font-size:18px;">Transport</div><div class="service-cat-count" style="color:rgba(255,255,255,0.8);">15 services</div></div>
+      <div class="service-cat-card" style="background:linear-gradient(135deg,rgba(5,13,26,0.5),rgba(10,22,40,0.85)), url('assets/images/gov_service_6.webp') center/cover;"><div class="service-cat-name" style="color:var(--gold);font-size:18px;">Housing</div><div class="service-cat-count" style="color:rgba(255,255,255,0.8);">10 services</div></div>
+      <div class="service-cat-card" style="background:linear-gradient(135deg,rgba(5,13,26,0.5),rgba(10,22,40,0.85)), url('assets/images/gov_service_7.webp') center/cover;"><div class="service-cat-name" style="color:var(--gold);font-size:18px;">Finance</div><div class="service-cat-count" style="color:rgba(255,255,255,0.8);">20 services</div></div>
+      <div class="service-cat-card" style="background:linear-gradient(135deg,rgba(5,13,26,0.5),rgba(10,22,40,0.85)), url('assets/images/gov_service_8.webp') center/cover;"><div class="service-cat-name" style="color:var(--gold);font-size:18px;">Agriculture</div><div class="service-cat-count" style="color:rgba(255,255,255,0.8);">22 services</div></div>
+      <div class="service-cat-card" style="background:linear-gradient(135deg,rgba(5,13,26,0.5),rgba(10,22,40,0.85)), url('assets/images/gov_service_9.webp') center/cover;"><div class="service-cat-name" style="color:var(--gold);font-size:18px;">Legal</div><div class="service-cat-count" style="color:rgba(255,255,255,0.8);">8 services</div></div>
+      <div class="service-cat-card" style="background:linear-gradient(135deg,rgba(5,13,26,0.5),rgba(10,22,40,0.85)), url('assets/images/gov_service_10.webp') center/cover;"><div class="service-cat-name" style="color:var(--gold);font-size:18px;">Utilities</div><div class="service-cat-count" style="color:rgba(255,255,255,0.8);">14 services</div></div>
+      <div class="service-cat-card" style="background:linear-gradient(135deg,rgba(5,13,26,0.5),rgba(10,22,40,0.85)), url('assets/images/gov_service_1.webp') center/cover;"><div class="service-cat-name" style="color:var(--gold);font-size:18px;">Pension</div><div class="service-cat-count" style="color:rgba(255,255,255,0.8);">9 services</div></div>
+      <div class="service-cat-card" style="background:linear-gradient(135deg,rgba(5,13,26,0.5),rgba(10,22,40,0.85)), url('assets/images/gov_service_2.webp') center/cover;"><div class="service-cat-name" style="color:var(--gold);font-size:18px;">Civil Records</div><div class="service-cat-count" style="color:rgba(255,255,255,0.8);">7 services</div></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: FEATURED SERVICES (Expandable) -->
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Popular Services</div>
+      <h2 class="section-title">Most <span>Requested</span> Services</h2>
+      <p class="section-subtitle">Click on any service to see details, requirements, and how to apply</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:12px;" data-expand-group="services">
+
+      <div class="expand-card">
+        <div class="expand-card-header">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <img src="assets/images/gov_service_3.webp" alt="Service" style="width:64px;height:64px;border-radius:14px;object-fit:cover;flex-shrink:0;border:1px solid var(--glass-border);" />
+            <div>
+              <div class="expand-card-title">Passport Application & Renewal</div>
+              <div style="display:flex;gap:8px;margin-top:4px;flex-wrap:wrap;">
+                <span class="badge badge-gold">⚡ Tatkal Available</span>
+                <span class="badge badge-blue">📅 7-14 Days</span>
+                <span class="badge badge-success">✓ Online Application</span>
+              </div>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-card-body">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+            <div>
+              <h4 style="font-size:14px;font-weight:700;color:var(--gold);margin-bottom:12px;">Required Documents</h4>
+              <ul style="font-size:13px;color:var(--gray-400);display:flex;flex-direction:column;gap:8px;">
+                <li>✓ Aadhaar Card (for identity proof)</li>
+                <li>✓ Birth Certificate or School Certificate</li>
+                <li>✓ Address Proof (utility bill/bank statement)</li>
+                <li>✓ Recent passport-size photographs</li>
+                <li>✓ Old passport (for renewal)</li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="font-size:14px;font-weight:700;color:var(--gold);margin-bottom:12px;">Fee Structure</h4>
+              <ul style="font-size:13px;color:var(--gray-400);display:flex;flex-direction:column;gap:8px;">
+                <li>✓ Fresh (36 pages): ₹1,500</li>
+                <li>✓ Fresh (60 pages): ₹2,000</li>
+                <li>✓ Tatkal (36 pages): ₹3,500</li>
+                <li>✓ Tatkal (60 pages): ₹4,000</li>
+                <li>✓ Minor (under 18): ₹1,000</li>
+              </ul>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="btn btn-primary btn-sm" style="margin-top:20px;">Apply Now →</a>
+        </div>
+      </div>
+
+      <div class="expand-card">
+        <div class="expand-card-header">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <img src="assets/images/gov_service_4.webp" alt="Service" style="width:64px;height:64px;border-radius:14px;object-fit:cover;flex-shrink:0;border:1px solid var(--glass-border);" />
+            <div>
+              <div class="expand-card-title">Aadhaar Card Update & Corrections</div>
+              <div style="display:flex;gap:8px;margin-top:4px;flex-wrap:wrap;">
+                <span class="badge badge-teal">🆓 Free of Cost</span>
+                <span class="badge badge-blue">📅 2-5 Days</span>
+                <span class="badge badge-success">✓ Online & Offline</span>
+              </div>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-card-body">
+          <p style="font-size:14px;color:var(--gray-400);line-height:1.7;margin-bottom:16px;">Update your name, address, date of birth, mobile number, or email linked to Aadhaar. Self-service updates available for address and mobile. Biometric update requires centre visit.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;">
+            <span class="badge badge-gold">Address Update</span><span class="badge badge-blue">Mobile Linking</span><span class="badge badge-teal">Lock Biometrics</span><span class="badge badge-gold">e-Aadhaar Download</span>
+          </div>
+          <a href="javascript:void(0)" class="btn btn-primary btn-sm">Update Aadhaar →</a>
+        </div>
+      </div>
+
+      <div class="expand-card">
+        <div class="expand-card-header">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <img src="assets/images/gov_service_5.webp" alt="Service" style="width:64px;height:64px;border-radius:14px;object-fit:cover;flex-shrink:0;border:1px solid var(--glass-border);" />
+            <div>
+              <div class="expand-card-title">Driving Licence · Apply, Renew & Transfer</div>
+              <div style="display:flex;gap:8px;margin-top:4px;flex-wrap:wrap;">
+                <span class="badge badge-blue">📅 15-30 Days</span><span class="badge badge-gold">🎯 Slot Booking</span><span class="badge badge-success">✓ Smart Card DL</span>
+              </div>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-card-body">
+          <p style="font-size:14px;color:var(--gray-400);line-height:1.7;margin-bottom:16px;">Apply for learner's licence, convert to permanent licence, renew expired DL, add vehicle category, transfer DL to another state. Online slot booking for driving test available at all RTOs.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+            <div><h4 style="font-size:13px;font-weight:700;color:var(--teal);margin-bottom:10px;">Vehicle Categories</h4><div style="display:flex;gap:6px;flex-wrap:wrap;"><span class="badge badge-teal">MC (2W)</span><span class="badge badge-teal">LMV</span><span class="badge badge-teal">HMV</span><span class="badge badge-teal">TRANS</span></div></div>
+            <div><h4 style="font-size:13px;font-weight:700;color:var(--gold);margin-bottom:10px;">Fees</h4><p style="font-size:13px;color:var(--gray-400);">LL: ₹150 | DL: ₹200 | Renewal: ₹250</p></div>
+          </div>
+          <a href="javascript:void(0)" class="btn btn-primary btn-sm" style="margin-top:16px;">Apply for DL →</a>
+        </div>
+      </div>
+
+      <div class="expand-card">
+        <div class="expand-card-header">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <img src="assets/images/gov_service_6.webp" alt="Service" style="width:64px;height:64px;border-radius:14px;object-fit:cover;flex-shrink:0;border:1px solid var(--glass-border);" />
+            <div>
+              <div class="expand-card-title">Ayushman Bharat — PM-JAY Health Card</div>
+              <div style="display:flex;gap:8px;margin-top:4px;flex-wrap:wrap;">
+                <span class="badge badge-success">🆓 Free Healthcare ₹5L</span><span class="badge badge-blue">ðŸ¥ 24,000+ Hospitals</span>
+              </div>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-card-body">
+          <p style="font-size:14px;color:var(--gray-400);line-height:1.7;margin-bottom:16px;">Get free health cover of up to ₹5 lakh per family per year at 24,000+ empanelled hospitals across India. Check eligibility, register, and download your Ayushman Card online.</p>
+          <div style="background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);border-radius:10px;padding:16px;margin-bottom:16px;">
+            <div style="font-size:13px;font-weight:700;color:#34d399;margin-bottom:8px;">Eligible Families (SECC 2011 Data)</div>
+            <p style="font-size:13px;color:var(--gray-400);">Families identified under Socio-Economic Caste Census 2011. Also includes active RSBY beneficiaries and additional state-defined criteria.</p>
+          </div>
+          <a href="javascript:void(0)" class="btn btn-primary btn-sm">Check Eligibility →</a>
+        </div>
+      </div>
+
+      <div class="expand-card">
+        <div class="expand-card-header">
+          <div style="display:flex;align-items:center;gap:16px;">
+            <img src="assets/images/gov_service_3.webp" alt="Service" style="width:64px;height:64px;border-radius:14px;object-fit:cover;flex-shrink:0;border:1px solid var(--glass-border);" />
+            <div>
+              <div class="expand-card-title">Income Tax e-Filing & Refund Status</div>
+              <div style="display:flex;gap:8px;margin-top:4px;flex-wrap:wrap;">
+                <span class="badge badge-gold">📅 Deadline: July 31</span><span class="badge badge-blue">📊 ITR 1-7</span><span class="badge badge-success">✓ Instant E-Verify</span>
+              </div>
+            </div>
+          </div>
+          <div class="expand-icon">+</div>
+        </div>
+        <div class="expand-card-body">
+          <p style="font-size:14px;color:var(--gray-400);line-height:1.7;margin-bottom:16px;">File your income tax return online, track refund status, respond to tax notices, update PAN details, and verify returns electronically — all in one place.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;">
+            <span class="badge badge-gold">ITR-1 (Sahaj)</span><span class="badge badge-blue">ITR-2</span><span class="badge badge-teal">ITR-3</span><span class="badge badge-gold">ITR-4 (Sugam)</span>
+          </div>
+          <a href="javascript:void(0)" class="btn btn-primary btn-sm">File ITR Now →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: PROCESS (Sticky Scroll) -->
+<section class="section how-it-works">
+  <div class="container">
+    <div class="sticky-grid">
+      <div class="sticky-left">
+        <div class="section-label">How to Apply</div>
+        <h2 class="section-title">Simple <span>4-Step</span> Process</h2>
+        <p style="color:var(--gray-400);font-size:15px;line-height:1.7;margin-bottom:24px;">All services follow the same simple process. Once registered, you can apply for any service in minutes.</p>
+        
+        <div style="border-radius:var(--radius-lg);overflow:hidden;margin-bottom:24px;height:240px;">
+          <img src="assets/images/process_illustration.webp" alt="Digital Process" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+
+        <div class="glass-card" style="padding:24px;">
+          <div style="font-size:13px;font-weight:700;color:var(--gold);margin-bottom:12px;">â± Average Processing Times</div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:12px;color:var(--gray-400);">Identity Documents</span><span style="font-size:12px;font-weight:700;">2-7 days</span></div><div class="progress-bar-track"><div class="progress-bar-fill" data-width="30%" style="background:var(--grad-gold);"></div></div></div>
+            <div><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:12px;color:var(--gray-400);">Health Services</span><span style="font-size:12px;font-weight:700;">Same day</span></div><div class="progress-bar-track"><div class="progress-bar-fill" data-width="10%" style="background:var(--grad-teal);"></div></div></div>
+            <div><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:12px;color:var(--gray-400);">Passport</span><span style="font-size:12px;font-weight:700;">7-15 days</span></div><div class="progress-bar-track"><div class="progress-bar-fill" data-width="50%"></div></div></div>
+            <div><div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="font-size:12px;color:var(--gray-400);">Property Registration</span><span style="font-size:12px;font-weight:700;">15-30 days</span></div><div class="progress-bar-track"><div class="progress-bar-fill" data-width="80%" style="background:linear-gradient(135deg,#8B5CF6,#A78BFA);"></div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="sticky-steps">
+        <div class="step-item"><div class="step-num">1</div><div class="step-content"><h3>Create Your Account</h3><p>Register with your mobile number or Aadhaar. Verify your identity once — it's remembered for all future applications. Takes only 2 minutes.</p></div></div>
+        <div class="step-item"><div class="step-num">2</div><div class="step-content"><h3>Select Service & Fill Form</h3><p>Our smart forms pre-fill details from your Aadhaar, reducing form-filling time by 70%. Guided tips at every step ensure no mistakes.</p></div></div>
+        <div class="step-item"><div class="step-num">3</div><div class="step-content"><h3>Upload Documents & Pay</h3><p>Import documents directly from DigiLocker (zero re-upload needed). Pay securely via UPI, Net Banking, Card, or Wallet. All payments are insured.</p></div></div>
+        <div class="step-item" style="border-bottom:none;margin-bottom:0;padding-bottom:0;"><div class="step-num">4</div><div class="step-content"><h3>Track & Receive</h3><p>Real-time tracking with WhatsApp, SMS, and email notifications. Download digital certificates instantly. Physical documents delivered via India Post.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: FLIP CARDS · Document Download -->
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Download Center</div>
+      <h2 class="section-title">Forms & <span>Documents</span></h2>
+      <p class="section-subtitle">Download application forms, guidelines, and circulars</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;">
+      <div class="flip-card" style="height:220px;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background:linear-gradient(135deg,rgba(5,13,26,0.6),rgba(10,22,40,0.85)), url('assets/images/gov_service_7.webp') center/cover;"><h4 style="font-size:16px;font-weight:700;margin-bottom:6px;">Passport Form</h4><p style="font-size:12px;color:var(--gray-500);">SP-1 & SP-2</p></div>
+          <div class="flip-card-back"><h4 style="font-size:16px;font-weight:700;margin-bottom:12px;">Passport Application</h4><p style="font-size:13px;color:rgba(255,255,255,0.8);margin-bottom:16px;">Form SP-1 for fresh passport, SP-2 for renewal. Available in English & Hindi.</p><a href="javascript:void(0)" class="btn btn-primary btn-sm">Download →</a></div>
+        </div>
+      </div>
+      <div class="flip-card" style="height:220px;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background:linear-gradient(135deg,rgba(5,13,26,0.6),rgba(10,22,40,0.85)), url('assets/images/gov_service_8.webp') center/cover;"><h4 style="font-size:16px;font-weight:700;margin-bottom:6px;">DL Form 1 & 2</h4><p style="font-size:12px;color:var(--gray-500);">Learner & Permanent</p></div>
+          <div class="flip-card-back" style="background:linear-gradient(135deg,rgba(245,158,11,0.3),rgba(217,119,6,0.4));"><h4 style="font-size:16px;font-weight:700;margin-bottom:12px;">Driving Licence Forms</h4><p style="font-size:13px;color:rgba(255,255,255,0.8);margin-bottom:16px;">Form 1 for learner's licence application. Form 2 for permanent DL application.</p><a href="javascript:void(0)" class="btn btn-sm" style="background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.4);border-radius:8px;">Download →</a></div>
+        </div>
+      </div>
+      <div class="flip-card" style="height:220px;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background:linear-gradient(135deg,rgba(5,13,26,0.6),rgba(10,22,40,0.85)), url('assets/images/gov_service_9.webp') center/cover;"><h4 style="font-size:16px;font-weight:700;margin-bottom:6px;">PM Kisan Form</h4><p style="font-size:12px;color:var(--gray-500);">Farmer Registration</p></div>
+          <div class="flip-card-back" style="background:linear-gradient(135deg,rgba(13,148,136,0.4),rgba(20,184,166,0.5));"><h4 style="font-size:16px;font-weight:700;margin-bottom:12px;">PM Kisan Application</h4><p style="font-size:13px;color:rgba(255,255,255,0.9);margin-bottom:16px;">Registration form for PM Kisan Samman Nidhi. Attach Aadhaar & land records.</p><a href="javascript:void(0)" class="btn btn-sm" style="background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.4);border-radius:8px;">Download →</a></div>
+        </div>
+      </div>
+      <div class="flip-card" style="height:220px;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background:linear-gradient(135deg,rgba(5,13,26,0.6),rgba(10,22,40,0.85)), url('assets/images/gov_service_10.webp') center/cover;"><h4 style="font-size:16px;font-weight:700;margin-bottom:6px;">Scholarship Form</h4><p style="font-size:12px;color:var(--gray-500);">NSP Application</p></div>
+          <div class="flip-card-back" style="background:linear-gradient(135deg,rgba(139,92,246,0.4),rgba(167,139,250,0.4));"><h4 style="font-size:16px;font-weight:700;margin-bottom:12px;">Scholarship Application</h4><p style="font-size:13px;color:rgba(255,255,255,0.9);margin-bottom:16px;">National Scholarship Portal form for pre & post matric students. Attach marksheets & income certificate.</p><a href="javascript:void(0)" class="btn btn-sm" style="background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.4);border-radius:8px;">Download →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-wrap"><div style="width:44px;height:44px;background:var(--grad-gold);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--navy-dark);font-weight:900;font-family:'Outfit',sans-serif;">S</div><span style="font-family:'Outfit',sans-serif;font-size:20px;font-weight:800;">Stack<span class="text-gold">ly</span> GovServices</span></div>
+        <p>India's premier digital government services portal. Serving 50M+ citizens across 28 states.</p>
+        <div class="footer-social"><a href="404.html" class="social-btn" title="Twitter">🐦</a><a href="404.html" class="social-btn" title="Facebook">📘</a><a href="404.html" class="social-btn" title="Instagram">📸</a><a href="404.html" class="social-btn" title="YouTube">▶</a><a href="404.html" class="social-btn" title="LinkedIn">💼</a></div>
+      </div>
+      <div class="footer-col"><h4>Navigation</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div></div>
+      <div class="footer-col"><h4>Top Services</h4><div class="footer-links"><a href="javascript:void(0)">Passport</a><a href="javascript:void(0)">Aadhaar Update</a><a href="javascript:void(0)">Driving Licence</a><a href="javascript:void(0)">Income Tax</a><a href="javascript:void(0)">PM Kisan</a></div></div>
+      <div class="footer-col"><h4>Support</h4><div class="footer-links"><a href="javascript:void(0)">Help Center</a><a href="contact.html">Contact Us</a><a href="javascript:void(0)">FAQs</a><a href="javascript:void(0)">Privacy Policy</a><a href="login.html">Login</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Stackly GovServices. All rights reserved.</span><span>Made with ❤️ for Digital India</span></div>
+  </div>
+</footer>
+<div class="scroll-top" id="scroll-top">↑</div>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

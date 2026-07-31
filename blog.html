@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog & News · Stackly GovServices</title>
+  <meta name="description" content="Latest government news, policy updates, scheme announcements, and digital India initiatives. Stay informed with Stackly GovServices blog." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+<div class="page-loader" id="page-loader"><div class="loader-logo">Stack<span>ly</span></div><div class="loader-bar"><div class="loader-bar-fill"></div></div></div>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo"><div class="logo-icon">S</div><div class="logo-text">Stack<span>ly</span> <small style="font-size:11px;font-weight:500;color:var(--gray-400)">GovServices</small></div></a>
+    <ul class="navbar-nav">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="blog.html" class="nav-link active">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="navbar-actions">
+      <div style="display:flex;gap:12px;">
+        <a href="login.html" class="btn-nav-login">Login</a>
+        <a href="register.html" class="btn-nav-login">Register</a>
+      </div>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <a href="index.html" class="nav-link">🏠 Home</a><a href="about.html" class="nav-link">ℹ About</a><a href="services.html" class="nav-link">⚙ Services</a><a href="blog.html" class="nav-link">📰 Blog</a><a href="contact.html" class="nav-link">📞 Contact</a>
+  </div>
+  <div style="display:flex;gap:12px;margin-top:16px;">
+    <a href="login.html" class="btn-nav-login" style="flex:1;text-align:center;">Login</a>
+    <a href="register.html" class="btn-nav-login" style="flex:1;text-align:center;">Register</a>
+  </div>
+</div>
+
+<!-- SECTION 1: HERO -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Blog & News</span></div>
+    <div class="section-label" data-aos="fade-up">News & Updates</div>
+    <h1 data-aos="fade-up" data-aos-delay="100">Government <span class="text-gold">Insights</span> & Updates</h1>
+    <p data-aos="fade-up" data-aos-delay="200">Policy changes, scheme launches, and digital governance news — curated daily for 50 million citizens.</p>
+    <!-- Category filter tabs -->
+    <div data-aos="fade-up" data-aos-delay="300" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;">
+      <button class="badge badge-gold" style="padding:8px 16px;cursor:pointer;font-size:13px;">All</button>
+      <button class="badge badge-blue" style="padding:8px 16px;cursor:pointer;font-size:13px;">Health</button>
+      <button class="badge badge-teal" style="padding:8px 16px;cursor:pointer;font-size:13px;">Education</button>
+      <button class="badge badge-gold" style="padding:8px 16px;cursor:pointer;font-size:13px;">Agriculture</button>
+      <button class="badge badge-blue" style="padding:8px 16px;cursor:pointer;font-size:13px;">Finance</button>
+      <button class="badge badge-teal" style="padding:8px 16px;cursor:pointer;font-size:13px;">Policy</button>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: FEATURED ARTICLE -->
+<section class="section">
+  <div class="container">
+    <div class="section-label" data-aos="fade-up">Featured Story</div>
+    <div class="blog-featured" data-aos="fade-up">
+      <div class="blog-featured-img" style="background:linear-gradient(135deg,rgba(5,13,26,0.2),rgba(10,22,40,0.5)), url('assets/images/impact_1.webp') center/cover;"></div>
+      <div class="blog-featured-content">
+        <span class="badge badge-gold" style="margin-bottom:20px;">🌟 Featured</span>
+        <div class="blog-meta" style="margin-bottom:16px;"><span>📅 July 28, 2026</span><span>•</span><span>👤 Editorial Team</span><span>•</span><span>⏱ 8 min read</span></div>
+        <h2 style="font-size:28px;font-weight:800;line-height:1.3;margin-bottom:16px;">Digital India Crosses Historic 50 Million Citizens Milestone on GovServices Portal</h2>
+        <p style="font-size:15px;color:var(--gray-400);line-height:1.8;margin-bottom:28px;">In a landmark achievement for Digital India, the GovServices portal has surpassed 50 million registered citizens — making it the largest digital government platform in South Asia. Prime Minister praised the milestone, calling it "proof that technology can truly democratize governance for every Indian."</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="javascript:void(0)" class="btn btn-primary">Read Full Story →</a>
+          <a href="javascript:void(0)" class="btn btn-outline">Share Article</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: BLOG GRID (Hover Reveal Cards) -->
+<section class="section" style="background:var(--navy);">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-label">Latest Articles</div>
+      <h2 class="section-title">Recent <span>News & Policies</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;" data-aos="fade-up">
+
+      <!-- Hover Reveal Card 1 -->
+      <div class="reveal-card" style="aspect-ratio:auto;height:auto;position:relative;overflow:hidden;border-radius:var(--radius-lg);background:var(--glass-bg);border:1px solid var(--glass-border);cursor:pointer;transition:var(--transition);" onmouseenter="this.querySelector('.reveal-extra').style.transform='translateY(0)'" onmouseleave="this.querySelector('.reveal-extra').style.transform='translateY(-100%)'">
+        <div style="background:linear-gradient(135deg,rgba(37,99,235,0.2),rgba(13,148,136,0.1));height:180px;display:flex;align-items:center;justify-content:center;font-size:60px;position:relative;overflow:hidden;">🏥<div class="reveal-extra" style="position:absolute;top:0;left:0;right:0;background:rgba(5,13,26,0.95);padding:20px;transform:translateY(-100%);transition:transform 0.4s ease;backdrop-filter:blur(10px);"><div style="font-size:12px;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;">Health Update</div><p style="font-size:13px;color:var(--gray-300);line-height:1.6;">Extended health coverage for senior citizens now covers 1.2 crore additional families.</p></div></div>
+        <div style="padding:24px;">
+          <div class="blog-meta"><span class="badge badge-blue">Health</span><span style="font-size:12px;color:var(--gray-500);">July 25, 2026</span></div>
+          <div class="blog-card-title">Ayushman Bharat Expanded: Senior Citizens Above 70 Get Full ₹5 Lakh Cover</div>
+          <div class="blog-card-excerpt">The Union Cabinet approved extension of Ayushman Bharat PM-JAY to cover all senior citizens above 70 years, regardless of income.</div>
+          <a href="javascript:void(0)" class="btn btn-outline btn-sm">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Hover Reveal Card 2 -->
+      <div class="reveal-card" style="aspect-ratio:auto;height:auto;position:relative;overflow:hidden;border-radius:var(--radius-lg);background:var(--glass-bg);border:1px solid var(--glass-border);cursor:pointer;transition:var(--transition);" onmouseenter="this.querySelector('.reveal-extra').style.transform='translateY(0)'" onmouseleave="this.querySelector('.reveal-extra').style.transform='translateY(-100%)'">
+        <div style="background:linear-gradient(135deg,rgba(245,158,11,0.2),rgba(217,119,6,0.1));height:180px;display:flex;align-items:center;justify-content:center;font-size:60px;position:relative;overflow:hidden;">🌾<div class="reveal-extra" style="position:absolute;top:0;left:0;right:0;background:rgba(5,13,26,0.95);padding:20px;transform:translateY(-100%);transition:transform 0.4s ease;backdrop-filter:blur(10px);"><div style="font-size:12px;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;">Agriculture</div><p style="font-size:13px;color:var(--gray-300);line-height:1.6;">₹6000 transferred to 8.5 crore farmer beneficiaries in the 19th installment.</p></div></div>
+        <div style="padding:24px;">
+          <div class="blog-meta"><span class="badge badge-gold">Agriculture</span><span style="font-size:12px;color:var(--gray-500);">July 22, 2026</span></div>
+          <div class="blog-card-title">PM Kisan Samman Nidhi 19th Installment — ₹6000 Released to 8.5 Crore Farmers</div>
+          <div class="blog-card-excerpt">Prime Minister transferred the 19th installment of PM Kisan to over 8.5 crore eligible farmer families across India through DBT.</div>
+          <a href="javascript:void(0)" class="btn btn-outline btn-sm">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Hover Reveal Card 3 -->
+      <div class="reveal-card" style="aspect-ratio:auto;height:auto;position:relative;overflow:hidden;border-radius:var(--radius-lg);background:var(--glass-bg);border:1px solid var(--glass-border);cursor:pointer;transition:var(--transition);" onmouseenter="this.querySelector('.reveal-extra').style.transform='translateY(0)'" onmouseleave="this.querySelector('.reveal-extra').style.transform='translateY(-100%)'">
+        <div style="background:linear-gradient(135deg,rgba(139,92,246,0.2),rgba(109,40,217,0.1));height:180px;display:flex;align-items:center;justify-content:center;font-size:60px;position:relative;overflow:hidden;">🎓<div class="reveal-extra" style="position:absolute;top:0;left:0;right:0;background:rgba(5,13,26,0.95);padding:20px;transform:translateY(-100%);transition:transform 0.4s ease;backdrop-filter:blur(10px);"><div style="font-size:12px;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;">Education</div><p style="font-size:13px;color:var(--gray-300);line-height:1.6;">NSP 2.0 uses AI to auto-match students with 120+ scholarship schemes.</p></div></div>
+        <div style="padding:24px;">
+          <div class="blog-meta"><span class="badge badge-blue" style="background:rgba(139,92,246,0.15);color:#a78bfa;border-color:rgba(139,92,246,0.2);">Education</span><span style="font-size:12px;color:var(--gray-500);">July 18, 2026</span></div>
+          <div class="blog-card-title">National Scholarship Portal 2.0 — AI Matches Students to 120+ Scholarship Schemes</div>
+          <div class="blog-card-excerpt">The revamped NSP 2.0 platform uses artificial intelligence to automatically identify eligible scholarships for each student based on their profile.</div>
+          <a href="javascript:void(0)" class="btn btn-outline btn-sm">Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-aos="fade-up">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,rgba(16,185,129,0.2),rgba(5,150,105,0.1));display:flex;align-items:center;justify-content:center;font-size:56px;">🏘</div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span class="badge badge-teal">Housing</span><span style="font-size:12px;color:var(--gray-500);">July 15, 2026</span></div>
+          <div class="blog-card-title">PM Awas Yojana 2.0: 2 Crore New Houses Sanctioned Under Rural Scheme</div>
+          <div class="blog-card-excerpt">Government sanctions additional 2 crore houses under PMAY-Gramin with enhanced subsidy of ₹1.2 lakh per unit.</div>
+          <a href="javascript:void(0)" class="btn btn-outline btn-sm">Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,rgba(245,158,11,0.2),rgba(217,119,6,0.1));display:flex;align-items:center;justify-content:center;font-size:56px;">💰</div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span class="badge badge-gold">Finance</span><span style="font-size:12px;color:var(--gray-500);">July 12, 2026</span></div>
+          <div class="blog-card-title">Income Tax Deadline Extended to August 31, 2026 for Assessment Year 2026-27</div>
+          <div class="blog-card-excerpt">CBDT extends ITR filing deadline for salaried individuals and HUFs following taxpayer requests and system load issues.</div>
+          <a href="javascript:void(0)" class="btn btn-outline btn-sm">Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="blog-card-img" style="background:linear-gradient(135deg,rgba(6,182,212,0.2),rgba(14,116,144,0.1));display:flex;align-items:center;justify-content:center;font-size:56px;">🌐</div>
+        <div class="blog-card-body">
+          <div class="blog-meta"><span class="badge badge-blue">Digital India</span><span style="font-size:12px;color:var(--gray-500);">July 8, 2026</span></div>
+          <div class="blog-card-title">DigiLocker Now Supports 1600+ Issuers · All Certificates Go Digital</div>
+          <div class="blog-card-excerpt">DigiLocker platform now has 1600+ document issuers from central ministries, state governments, and educational institutions.</div>
+          <a href="javascript:void(0)" class="btn btn-outline btn-sm">Read More →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-top:48px;" data-aos="fade-up">
+      <a href="javascript:void(0)" class="btn btn-primary btn-lg">Load More Articles →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: CATEGORIES + NEWSLETTER -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;" data-aos="fade-up">
+      <!-- Categories -->
+      <div>
+        <div class="section-label">Browse</div>
+        <h2 class="section-title" style="font-size:36px;">Topics & <span>Categories</span></h2>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-top:24px;">
+          <div class="glass-card" style="padding:20px 24px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;" onclick="window.location.href='404.html'">
+            <div style="display:flex;align-items:center;gap:16px;"><span style="font-size:28px;">💊</span><div><div style="font-weight:600;margin-bottom:2px;">Health & Welfare</div><div style="font-size:12px;color:var(--gray-500);">24 articles</div></div></div>
+            <span style="color:var(--gold);">→</span>
+          </div>
+          <div class="glass-card" style="padding:20px 24px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;" onclick="window.location.href='404.html'">
+            <div style="display:flex;align-items:center;gap:16px;"><span style="font-size:28px;">🌾</span><div><div style="font-weight:600;margin-bottom:2px;">Agriculture & Rural</div><div style="font-size:12px;color:var(--gray-500);">18 articles</div></div></div>
+            <span style="color:var(--gold);">→</span>
+          </div>
+          <div class="glass-card" style="padding:20px 24px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;" onclick="window.location.href='404.html'">
+            <div style="display:flex;align-items:center;gap:16px;"><span style="font-size:28px;">💰</span><div><div style="font-weight:600;margin-bottom:2px;">Finance & Tax</div><div style="font-size:12px;color:var(--gray-500);">31 articles</div></div></div>
+            <span style="color:var(--gold);">→</span>
+          </div>
+          <div class="glass-card" style="padding:20px 24px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;" onclick="window.location.href='404.html'">
+            <div style="display:flex;align-items:center;gap:16px;"><span style="font-size:28px;">🎓</span><div><div style="font-weight:600;margin-bottom:2px;">Education</div><div style="font-size:12px;color:var(--gray-500);">15 articles</div></div></div>
+            <span style="color:var(--gold);">→</span>
+          </div>
+          <div class="glass-card" style="padding:20px 24px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;" onclick="window.location.href='404.html'">
+            <div style="display:flex;align-items:center;gap:16px;"><span style="font-size:28px;">🌐</span><div><div style="font-weight:600;margin-bottom:2px;">Digital India</div><div style="font-size:12px;color:var(--gray-500);">42 articles</div></div></div>
+            <span style="color:var(--gold);">→</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <div style="background:linear-gradient(135deg,rgba(37,99,235,0.15),rgba(245,158,11,0.08));border:1px solid rgba(37,99,235,0.2);border-radius:var(--radius-xl);padding:40px;height:100%;display:flex;flex-direction:column;justify-content:center;">
+          <div style="font-size:52px;margin-bottom:16px;">📬</div>
+          <h3 style="font-size:26px;font-weight:800;margin-bottom:12px;">Stay Informed</h3>
+          <p style="font-size:15px;color:var(--gray-400);line-height:1.7;margin-bottom:28px;">Get weekly government updates, scheme alerts, and policy news delivered directly to your inbox. Join 2 million subscribers.</p>
+          <form id="newsletter-form">
+            <div class="form-group">
+              <input type="text" placeholder="Your full name" class="form-input" />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="your@email.com" class="form-input" required />
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;">
+              <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--gray-400);cursor:pointer;"><input type="checkbox" checked style="accent-color:var(--gold);"/> Health</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--gray-400);cursor:pointer;"><input type="checkbox" checked style="accent-color:var(--gold);"/> Agriculture</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--gray-400);cursor:pointer;"><input type="checkbox" style="accent-color:var(--gold);"/> Finance</label>
+              <label style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--gray-400);cursor:pointer;"><input type="checkbox" style="accent-color:var(--gold);"/> Education</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Subscribe for Free →</button>
+          </form>
+          <p style="font-size:11px;color:var(--gray-500);margin-top:12px;text-align:center;">🔒 No spam. Unsubscribe anytime. Government data privacy guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: TRENDING (Marquee) -->
+<section style="padding:48px 0;background:var(--navy);border-top:1px solid var(--glass-border);">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up" style="margin-bottom:32px;">
+      <div class="section-label">Trending Now</div>
+      <h2 class="section-title" style="font-size:32px;">Hot <span>Topics</span> This Week</h2>
+    </div>
+  </div>
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <div class="marquee-item">🔥 PM Kisan 19th Installment</div>
+      <div class="marquee-item">📱 DigiLocker 2.0 Launch</div>
+      <div class="marquee-item">💊 Ayushman Bharat Expansion</div>
+      <div class="marquee-item">🎓 Scholarship Portal Update</div>
+      <div class="marquee-item">🏘 PMAY 2.0 Houses</div>
+      <div class="marquee-item">💰 ITR Deadline Extended</div>
+      <div class="marquee-item">🚗 Faceless DL Test</div>
+      <div class="marquee-item">⚡ Solar Rooftop Scheme</div>
+      <div class="marquee-item">🌾 Crop Insurance Claims</div>
+      <div class="marquee-item">🛂 Passport Seva 3.0</div>
+      <!-- Duplicates -->
+      <div class="marquee-item">🔥 PM Kisan 19th Installment</div>
+      <div class="marquee-item">📱 DigiLocker 2.0 Launch</div>
+      <div class="marquee-item">💊 Ayushman Bharat Expansion</div>
+      <div class="marquee-item">🎓 Scholarship Portal Update</div>
+      <div class="marquee-item">🏘 PMAY 2.0 Houses</div>
+      <div class="marquee-item">💰 ITR Deadline Extended</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-wrap"><div style="width:44px;height:44px;background:var(--grad-gold);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--navy-dark);font-weight:900;font-family:'Outfit',sans-serif;">S</div><span style="font-family:'Outfit',sans-serif;font-size:20px;font-weight:800;">Stack<span class="text-gold">ly</span> GovServices</span></div>
+        <p>India's premier digital government services portal. News, updates & services for every citizen.</p>
+        <div class="footer-social"><a href="404.html" class="social-btn" title="Twitter">🐦</a><a href="404.html" class="social-btn" title="Facebook">📘</a><a href="404.html" class="social-btn" title="Instagram">📸</a><a href="404.html" class="social-btn" title="YouTube">▶</a></div>
+      </div>
+      <div class="footer-col"><h4>Navigation</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div></div>
+      <div class="footer-col"><h4>Categories</h4><div class="footer-links"><a href="javascript:void(0)">Health</a><a href="javascript:void(0)">Agriculture</a><a href="javascript:void(0)">Finance</a><a href="javascript:void(0)">Education</a><a href="javascript:void(0)">Digital India</a></div></div>
+      <div class="footer-col"><h4>Support</h4><div class="footer-links"><a href="contact.html">Contact</a><a href="javascript:void(0)">Privacy Policy</a><a href="javascript:void(0)">Terms</a><a href="login.html">Login</a><a href="register.html">Register</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Stackly GovServices. All rights reserved.</span><span>Made with ❤ for Digital India</span></div>
+  </div>
+</footer>
+<div class="scroll-top" id="scroll-top">↑</div>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GovServices · Digital Gateway to Government Services</title>
+  <meta name="description" content="Access all government services digitally. Apply for passports, driving licenses, health cards, certificates and more through India's premier digital government portal powered by Stackly." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div class="page-loader" id="page-loader">
+  <div class="loader-logo">Stack<span>ly</span></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-logo">
+      <div class="logo-icon">S</div>
+      <div class="logo-text">Stack<span>ly</span> <small style="font-size:11px;font-weight:500;color:var(--gray-400)">GovServices</small></div>
+    </a>
+    <ul class="navbar-nav">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="navbar-actions">
+      <div style="display:flex;gap:12px;">
+        <a href="login.html" class="btn-nav-login">Login</a>
+        <a href="register.html" class="btn-nav-login">Register</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-links">
+    <a href="index.html" class="nav-link">ðŸ  Home</a>
+    <a href="about.html" class="nav-link">ℹ About</a>
+    <a href="services.html" class="nav-link">⚙ Services</a>
+    <a href="blog.html" class="nav-link">📰 Blog</a>
+    <a href="contact.html" class="nav-link">📞 Contact</a>
+  </div>
+  <div style="display:flex;gap:12px;margin-top:16px;">
+    <a href="login.html" class="btn-nav-login" style="flex:1;text-align:center;">Login</a>
+    <a href="register.html" class="btn-nav-login" style="flex:1;text-align:center;">Register</a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SECTION 1: HERO
+═══════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-bg-orb hero-bg-orb-1 float-slow"></div>
+  <div class="hero-bg-orb hero-bg-orb-2 float"></div>
+  <div class="particles" id="hero-particles"></div>
+
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+      <div class="hero-content">
+        <div class="hero-tag">🇮🇳 Digital India Initiative</div>
+        <h1>
+          Your Gateway to<br/>
+          <span class="hero-typing-wrapper">
+            <span class="hero-typing" id="typing-text">Smarter Services</span>
+          </span>
+        </h1>
+        <p>Access 500+ government services from a single digital platform. Apply, track, and receive — all online, all secure, all powered by Stackly.</p>
+        <div class="hero-actions">
+          <a href="404.html" class="btn btn-primary btn-lg">🚀 Explore Services</a>
+          <a href="404.html" class="btn btn-outline btn-lg">📋 Register Now</a>
+        </div>
+
+        <!-- Mini Stats -->
+        <div style="display:flex;gap:32px;margin-top:48px;flex-wrap:wrap;">
+          <div>
+            <div style="font-family:'Outfit',sans-serif;font-size:28px;font-weight:900;color:var(--gold);">50M+</div>
+            <div style="font-size:12px;color:var(--gray-400);">Citizens Served</div>
+          </div>
+          <div style="width:1px;background:var(--glass-border);"></div>
+          <div>
+            <div style="font-family:'Outfit',sans-serif;font-size:28px;font-weight:900;color:var(--gold);">500+</div>
+            <div style="font-size:12px;color:var(--gray-400);">Services Online</div>
+          </div>
+          <div style="width:1px;background:var(--glass-border);"></div>
+          <div>
+            <div style="font-family:'Outfit',sans-serif;font-size:28px;font-weight:900;color:var(--gold);">28</div>
+            <div style="font-size:12px;color:var(--gray-400);">States Covered</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+        <div class="hero-image-wrap">
+          <div class="float" style="width:100%;max-width:520px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-xl);padding:16px;position:relative;">
+            <img src="assets/images/user_dashboard_banner.webp" alt="User Dashboard" style="width:100%; border-radius: 12px; box-shadow: var(--shadow-lg);" />
+            <!-- Floating Elements -->
+            <div class="hero-badge-floating float-slow" style="position:absolute; bottom: -20px; right: -20px; background:var(--navy); padding:16px 24px; border-radius:12px; border:1px solid var(--glass-border); box-shadow:var(--shadow-md); display:flex; align-items:center; gap:12px; z-index:2;">
+                <div style="width:40px;height:40px;background:rgba(16,185,129,0.2);color:var(--success);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;">✓</div>
+                <div>
+                    <div style="font-weight:700;color:var(--white);">98.5%</div>
+                    <div style="font-size:12px;color:var(--gray-400);">Approval Rate</div>
+                </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <div class="mouse"></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 2: INFINITE MARQUEE
+═══════════════════════════════════════ -->
+<section style="padding:40px 0;background:var(--navy);border-top:1px solid var(--glass-border);border-bottom:1px solid var(--glass-border);">
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <!-- Duplicated for seamless loop -->
+      <div class="marquee-item"><span class="icon">🪪</span> Aadhaar Services</div>
+      <div class="marquee-item"><span class="icon">🛂</span> Passport & Visa</div>
+      <div class="marquee-item"><span class="icon">🚗</span> Driving Licence</div>
+      <div class="marquee-item"><span class="icon">💊</span> Health Card</div>
+      <div class="marquee-item"><span class="icon">🎓</span> Education Certificates</div>
+      <div class="marquee-item"><span class="icon">ðŸ˜</span> Property Registration</div>
+      <div class="marquee-item"><span class="icon">💰</span> Income Tax Filing</div>
+      <div class="marquee-item"><span class="icon">👶</span> Birth Certificate</div>
+      <div class="marquee-item"><span class="icon">⚡</span> Utility Bills</div>
+      <div class="marquee-item"><span class="icon">ðŸ¦</span> Pension Schemes</div>
+      <div class="marquee-item"><span class="icon">🌾</span> Agriculture Support</div>
+      <div class="marquee-item"><span class="icon">ðŸ—</span> Building Permits</div>
+      <!-- Duplicates -->
+      <div class="marquee-item"><span class="icon">🪪</span> Aadhaar Services</div>
+      <div class="marquee-item"><span class="icon">🛂</span> Passport & Visa</div>
+      <div class="marquee-item"><span class="icon">🚗</span> Driving Licence</div>
+      <div class="marquee-item"><span class="icon">💊</span> Health Card</div>
+      <div class="marquee-item"><span class="icon">🎓</span> Education Certificates</div>
+      <div class="marquee-item"><span class="icon">ðŸ˜</span> Property Registration</div>
+      <div class="marquee-item"><span class="icon">💰</span> Income Tax Filing</div>
+      <div class="marquee-item"><span class="icon">👶</span> Birth Certificate</div>
+      <div class="marquee-item"><span class="icon">⚡</span> Utility Bills</div>
+      <div class="marquee-item"><span class="icon">ðŸ¦</span> Pension Schemes</div>
+      <div class="marquee-item"><span class="icon">🌾</span> Agriculture Support</div>
+      <div class="marquee-item"><span class="icon">ðŸ—</span> Building Permits</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 3: BENTO GRID SERVICES
+═══════════════════════════════════════ -->
+<section class="section services-bento">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-label">Our Services</div>
+      <h2 class="section-title">Everything You Need, <span>One Platform</span></h2>
+      <p class="section-subtitle">500+ government services available 24/7. No queues, no paperwork hassle — just digital convenience.</p>
+    </div>
+
+    <div class="bento-grid">
+      <!-- Large Featured -->
+      <div class="bento-col-8 bento-item bento-featured" data-aos="fade-right" style="background: linear-gradient(to top, rgba(5,13,26,1) 0%, rgba(5,13,26,0.3) 100%), url('assets/images/gov_service_2.webp') center/cover; border:1px solid var(--glass-border); border-radius:var(--radius-lg); padding:32px; min-height:300px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+          <span class="bento-large-icon" style="background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);padding:10px;border-radius:12px;display:inline-block;margin-bottom:16px;">🛂</span>
+          <h3 class="bento-item-title" style="font-size:28px;">Passport & Travel Documents</h3>
+          <p class="bento-item-desc" style="color:var(--gray-300);">Apply, renew, and track your passport applications online. Get tatkal service, check appointment slots, and receive digital updates at every stage.</p>
+        </div>
+        <a href="404.html" class="btn btn-primary" style="align-self:flex-start;margin-top:20px;">Apply Now →</a>
+      </div>
+
+      <!-- Tall card -->
+      <div class="bento-col-4 bento-item bento-row-2" data-aos="fade-left" style="background: linear-gradient(135deg, rgba(5,13,26,0.9), rgba(10,22,40,0.95)), url('assets/images/gov_service_6.webp') center/cover; border:1px solid rgba(245,158,11,0.3); border-radius:var(--radius-lg); padding:32px; display:flex; flex-direction:column;">
+        <div class="bento-icon" style="background:rgba(245,158,11,0.15);color:var(--gold);width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;">🪪</div>
+        <h3 class="bento-item-title" style="font-size:22px;margin-bottom:12px;">Aadhaar Services</h3>
+        <p class="bento-item-desc" style="color:var(--gray-400);flex:1;">Update address, name, mobile, email. Download e-Aadhaar, lock/unlock biometrics, and verify your identity securely online.</p>
+        <div style="margin-top:24px;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:8px;"><span style="font-size:12px;color:var(--gray-400);">Enrolments</span><span style="font-size:12px;font-weight:700;">130 Cr+</span></div>
+          <div class="progress-bar-track"><div class="progress-bar-fill" data-width="96%" style="background:var(--grad-gold);"></div></div>
+        </div>
+        <a href="404.html" class="btn btn-outline btn-sm" style="margin-top:24px;align-self:flex-start;">Update Details →</a>
+      </div>
+
+      <!-- Small cards row -->
+      <div class="bento-col-4 bento-item" data-aos="fade-up" data-aos-delay="100" style="background: linear-gradient(135deg, rgba(5,13,26,0.9), rgba(5,13,26,0.8)), url('assets/images/gov_service_5.webp') center/cover; border:1px solid var(--glass-border); border-radius:var(--radius-lg); padding:24px;">
+        <div class="bento-icon" style="background:rgba(13,148,136,0.15);color:var(--teal);width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:16px;">🚗</div>
+        <h3 class="bento-item-title" style="font-size:20px;margin-bottom:8px;">Driving Licence</h3>
+        <p class="bento-item-desc" style="color:var(--gray-400);font-size:14px;margin-bottom:16px;">Apply for learner's licence, renew DL, book slot for test, and download digital copies instantly.</p>
+        <a href="404.html" class="btn btn-outline btn-sm">Learn More →</a>
+      </div>
+
+      <div class="bento-col-4 bento-item" data-aos="fade-up" data-aos-delay="200" style="background: linear-gradient(135deg, rgba(5,13,26,0.9), rgba(5,13,26,0.8)), url('assets/images/gov_service_2.webp') center/cover; border:1px solid var(--glass-border); border-radius:var(--radius-lg); padding:24px;">
+        <div class="bento-icon" style="background:rgba(16,185,129,0.15);color:var(--success);width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:16px;">💊</div>
+        <h3 class="bento-item-title" style="font-size:20px;margin-bottom:8px;">Health Cards & Insurance</h3>
+        <p class="bento-item-desc" style="color:var(--gray-400);font-size:14px;margin-bottom:16px;">Enroll in PM Jan Arogya Yojana, get health ID, and access free treatment at 24,000+ empanelled hospitals.</p>
+        <a href="404.html" class="btn btn-outline btn-sm">Know More →</a>
+      </div>
+
+      <!-- Wide card -->
+      <div class="bento-col-6 bento-item" data-aos="fade-up" data-aos-delay="100" style="background: linear-gradient(135deg, rgba(5,13,26,0.9), rgba(5,13,26,0.8)), url('assets/images/gov_service_4.webp') center/cover; border:1px solid var(--glass-border); border-radius:var(--radius-lg); padding:24px; display:flex; gap:20px; align-items:center;">
+        <div>
+          <div class="bento-icon" style="background:rgba(139,92,246,0.15);color:#a78bfa;width:40px;height:40px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:12px;">🎓</div>
+          <h3 class="bento-item-title" style="font-size:20px;margin-bottom:8px;">Education & Certificates</h3>
+          <p class="bento-item-desc" style="color:var(--gray-400);font-size:14px;margin-bottom:16px;">Get DigiLocker documents, apply for scholarships, verify certificates, and access academic records digitally.</p>
+          <a href="404.html" class="btn btn-outline btn-sm">Read More →</a>
+        </div>
+      </div>
+
+      <div class="bento-col-6 bento-item" data-aos="fade-up" data-aos-delay="200" style="background: linear-gradient(135deg, rgba(5,13,26,0.9), rgba(5,13,26,0.8)), url('assets/images/gov_service_1.webp') center/cover; border:1px solid var(--glass-border); border-radius:var(--radius-lg); padding:24px; display:flex; gap:20px; align-items:center;">
+        <div>
+          <div class="bento-icon" style="background:rgba(236,72,153,0.15);color:#f472b6;width:40px;height:40px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:12px;">ðŸ¦</div>
+          <h3 class="bento-item-title" style="font-size:20px;margin-bottom:8px;">Pension & Social Security</h3>
+          <p class="bento-item-desc" style="color:var(--gray-400);font-size:14px;margin-bottom:16px;">Track pension status, apply for EPF withdrawal, check NPS balance, and access all social security schemes online.</p>
+          <a href="404.html" class="btn btn-outline btn-sm">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 4: STATS COUNTER
+═══════════════════════════════════════ -->
+<section class="section" style="background:var(--navy);">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-label">Impact by Numbers</div>
+      <h2 class="section-title">Serving <span>India</span> Every Day</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:16px;" data-aos="fade-up">
+      <div class="stat-card">
+        <div style="font-size:40px;margin-bottom:12px;">👨‍👩‍👧‍👦</div>
+        <div class="stat-number counter" data-target="50000000" data-suffix="M+" data-prefix="">50</div>
+        <div class="stat-label">Citizens Served Monthly</div>
+      </div>
+      <div class="stat-card">
+        <div style="font-size:40px;margin-bottom:12px;">⚙</div>
+        <div class="stat-number counter" data-target="500" data-suffix="+">500</div>
+        <div class="stat-label">Digital Services Available</div>
+      </div>
+      <div class="stat-card">
+        <div style="font-size:40px;margin-bottom:12px;">🏛</div>
+        <div class="stat-number counter" data-target="28" data-suffix="">28</div>
+        <div class="stat-label">States & UTs Connected</div>
+      </div>
+      <div class="stat-card">
+        <div style="font-size:40px;margin-bottom:12px;">⚡</div>
+        <div class="stat-number counter" data-target="99" data-suffix="%">99</div>
+        <div class="stat-label">Uptime Guaranteed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 5: FLIP CARDS · Service Categories
+═══════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-label">Service Categories</div>
+      <h2 class="section-title">Explore by <span>Category</span></h2>
+      <p class="section-subtitle">Hover over the cards to discover what each category offers</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;" data-aos="fade-up">
+      <!-- Flip Card 1 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background:linear-gradient(135deg,rgba(37,99,235,0.15),rgba(37,99,235,0.05));border-color:rgba(37,99,235,0.2);">
+            <div style="font-size:56px;margin-bottom:16px;">🏥</div>
+            <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Health</h3>
+            <p style="font-size:13px;color:var(--gray-400);">12 services available</p>
+            <p style="font-size:12px;color:var(--gray-500);margin-top:16px;">Hover to explore →</p>
+          </div>
+          <div class="flip-card-back">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Health Services</h3>
+            <ul style="font-size:13px;color:rgba(255,255,255,0.8);display:flex;flex-direction:column;gap:8px;">
+              <li>✓ Ayushman Bharat Card</li>
+              <li>✓ Health ID Registration</li>
+              <li>✓ Hospital Empanelment</li>
+              <li>✓ Mental Health Support</li>
+              <li>✓ Vaccination Records</li>
+            </ul>
+            <a href="404.html" class="btn btn-primary btn-sm" style="margin-top:20px;">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 2 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background:linear-gradient(135deg,rgba(245,158,11,0.12),rgba(245,158,11,0.04));border-color:rgba(245,158,11,0.2);">
+            <div style="font-size:56px;margin-bottom:16px;">📚</div>
+            <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Education</h3>
+            <p style="font-size:13px;color:var(--gray-400);">18 services available</p>
+            <p style="font-size:12px;color:var(--gray-500);margin-top:16px;">Hover to explore →</p>
+          </div>
+          <div class="flip-card-back" style="background:linear-gradient(135deg,rgba(245,158,11,0.3),rgba(217,119,6,0.4));">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Education Services</h3>
+            <ul style="font-size:13px;color:rgba(255,255,255,0.9);display:flex;flex-direction:column;gap:8px;">
+              <li>✓ Scholarship Applications</li>
+              <li>✓ DigiLocker Certificates</li>
+              <li>✓ School Enrollment</li>
+              <li>✓ RTE Admission</li>
+              <li>✓ Mid-day Meal Scheme</li>
+            </ul>
+            <a href="404.html" class="btn btn-sm" style="margin-top:20px;background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.4);border-radius:8px;">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 3 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background:linear-gradient(135deg,rgba(13,148,136,0.12),rgba(13,148,136,0.04));border-color:rgba(13,148,136,0.2);">
+            <div style="font-size:56px;margin-bottom:16px;">🚌</div>
+            <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Transport</h3>
+            <p style="font-size:13px;color:var(--gray-400);">15 services available</p>
+            <p style="font-size:12px;color:var(--gray-500);margin-top:16px;">Hover to explore →</p>
+          </div>
+          <div class="flip-card-back" style="background:linear-gradient(135deg,rgba(13,148,136,0.4),rgba(20,184,166,0.5));">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Transport Services</h3>
+            <ul style="font-size:13px;color:rgba(255,255,255,0.9);display:flex;flex-direction:column;gap:8px;">
+              <li>✓ Vehicle Registration</li>
+              <li>✓ Driving Licence</li>
+              <li>✓ RC Transfer</li>
+              <li>✓ Pollution Certificate</li>
+              <li>✓ Fitness Certificate</li>
+            </ul>
+            <a href="404.html" class="btn btn-sm" style="margin-top:20px;background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.4);border-radius:8px;">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flip Card 4 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background:linear-gradient(135deg,rgba(139,92,246,0.12),rgba(139,92,246,0.04));border-color:rgba(139,92,246,0.2);">
+            <div style="font-size:56px;margin-bottom:16px;">🏠</div>
+            <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Housing</h3>
+            <p style="font-size:13px;color:var(--gray-400);">10 services available</p>
+            <p style="font-size:12px;color:var(--gray-500);margin-top:16px;">Hover to explore →</p>
+          </div>
+          <div class="flip-card-back" style="background:linear-gradient(135deg,rgba(139,92,246,0.4),rgba(167,139,250,0.4));">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Housing Services</h3>
+            <ul style="font-size:13px;color:rgba(255,255,255,0.9);display:flex;flex-direction:column;gap:8px;">
+              <li>✓ Property Registration</li>
+              <li>✓ PM Awas Yojana</li>
+              <li>✓ Building Permits</li>
+              <li>✓ Encumbrance Cert.</li>
+              <li>✓ Water Connection</li>
+            </ul>
+            <a href="404.html" class="btn btn-sm" style="margin-top:20px;background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.4);border-radius:8px;">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background:linear-gradient(135deg,rgba(16,185,129,0.12),rgba(16,185,129,0.04));border-color:rgba(16,185,129,0.2);">
+            <div style="font-size:56px;margin-bottom:16px;">🌾</div>
+            <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Agriculture</h3>
+            <p style="font-size:13px;color:var(--gray-400);">22 services available</p>
+            <p style="font-size:12px;color:var(--gray-500);margin-top:16px;">Hover to explore →</p>
+          </div>
+          <div class="flip-card-back" style="background:linear-gradient(135deg,rgba(16,185,129,0.4),rgba(52,211,153,0.4));">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Agriculture Services</h3>
+            <ul style="font-size:13px;color:rgba(255,255,255,0.9);display:flex;flex-direction:column;gap:8px;">
+              <li>✓ PM Kisan Samman Nidhi</li>
+              <li>✓ Crop Insurance</li>
+              <li>✓ Soil Health Card</li>
+              <li>✓ Kisan Credit Card</li>
+              <li>✓ Market Linkage</li>
+            </ul>
+            <a href="404.html" class="btn btn-sm" style="margin-top:20px;background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.4);border-radius:8px;">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background:linear-gradient(135deg,rgba(236,72,153,0.12),rgba(236,72,153,0.04));border-color:rgba(236,72,153,0.2);">
+            <div style="font-size:56px;margin-bottom:16px;">💰</div>
+            <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Finance & Tax</h3>
+            <p style="font-size:13px;color:var(--gray-400);">20 services available</p>
+            <p style="font-size:12px;color:var(--gray-500);margin-top:16px;">Hover to explore →</p>
+          </div>
+          <div class="flip-card-back" style="background:linear-gradient(135deg,rgba(236,72,153,0.4),rgba(244,114,182,0.4));">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Finance Services</h3>
+            <ul style="font-size:13px;color:rgba(255,255,255,0.9);display:flex;flex-direction:column;gap:8px;">
+              <li>✓ Income Tax e-Filing</li>
+              <li>✓ GST Registration</li>
+              <li>✓ PAN Card Services</li>
+              <li>✓ EPF / NPS</li>
+              <li>✓ Subsidy Claims</li>
+            </ul>
+            <a href="404.html" class="btn btn-sm" style="margin-top:20px;background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.4);border-radius:8px;">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background:linear-gradient(135deg,rgba(249,115,22,0.12),rgba(249,115,22,0.04));border-color:rgba(249,115,22,0.2);">
+            <div style="font-size:56px;margin-bottom:16px;">⚖</div>
+            <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Legal & Justice</h3>
+            <p style="font-size:13px;color:var(--gray-400);">8 services available</p>
+            <p style="font-size:12px;color:var(--gray-500);margin-top:16px;">Hover to explore →</p>
+          </div>
+          <div class="flip-card-back" style="background:linear-gradient(135deg,rgba(249,115,22,0.4),rgba(251,146,60,0.4));">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Legal Services</h3>
+            <ul style="font-size:13px;color:rgba(255,255,255,0.9);display:flex;flex-direction:column;gap:8px;">
+              <li>✓ FIR Registration</li>
+              <li>✓ Court Case Status</li>
+              <li>✓ Legal Aid Services</li>
+              <li>✓ Birth / Death Cert.</li>
+              <li>✓ Domicile Certificate</li>
+            </ul>
+            <a href="404.html" class="btn btn-sm" style="margin-top:20px;background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.4);border-radius:8px;">Explore →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front" style="background:linear-gradient(135deg,rgba(6,182,212,0.12),rgba(6,182,212,0.04));border-color:rgba(6,182,212,0.2);">
+            <div style="font-size:56px;margin-bottom:16px;">🌊</div>
+            <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Utilities</h3>
+            <p style="font-size:13px;color:var(--gray-400);">14 services available</p>
+            <p style="font-size:12px;color:var(--gray-500);margin-top:16px;">Hover to explore →</p>
+          </div>
+          <div class="flip-card-back" style="background:linear-gradient(135deg,rgba(6,182,212,0.4),rgba(34,211,238,0.4));">
+            <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;">Utility Services</h3>
+            <ul style="font-size:13px;color:rgba(255,255,255,0.9);display:flex;flex-direction:column;gap:8px;">
+              <li>✓ Electricity Bills</li>
+              <li>✓ Water & Sewage</li>
+              <li>✓ Gas Connection</li>
+              <li>✓ Sanitation Services</li>
+              <li>✓ Waste Management</li>
+            </ul>
+            <a href="404.html" class="btn btn-sm" style="margin-top:20px;background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.4);border-radius:8px;">Explore →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 6: HOW IT WORKS (STICKY)
+═══════════════════════════════════════ -->
+<section class="section how-it-works">
+  <div class="container">
+    <div class="sticky-grid">
+      <!-- Sticky Left -->
+      <div class="sticky-left" data-aos="fade-right">
+        <div class="section-label">Simple Process</div>
+        <h2 class="section-title">How It<br/><span>Works</span></h2>
+        <p style="color:var(--gray-400);font-size:16px;line-height:1.7;margin-bottom:32px;">Getting government services has never been this easy. Follow our simple 4-step process to apply for any service online.</p>
+        <!-- Process Visual -->
+          <div style="background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:16px; margin-top:24px;" data-aos="zoom-in" data-aos-delay="200">
+            <img src="assets/images/process_illustration.webp" alt="Process Illustration" style="width:100%; border-radius: 12px; display:block;" />
+          </div>
+      </div>
+
+      <!-- Scrolling Right -->
+      <div class="sticky-steps">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>Register & Verify Identity</h3>
+            <p>Create your GovServices account with your Aadhaar number or mobile OTP. Your identity is verified instantly through UIDAI integration.</p>
+            <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;">
+              <span class="badge badge-gold">📱 Mobile OTP</span>
+              <span class="badge badge-blue">🪪 Aadhaar Verify</span>
+            </div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Choose Your Service</h3>
+            <p>Browse from 500+ available services across 20 categories. Use smart search or category filters to find exactly what you need.</p>
+            <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;">
+              <span class="badge badge-teal">ðŸ” Smart Search</span>
+              <span class="badge badge-gold">📂 20 Categories</span>
+            </div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Submit Documents Online</h3>
+            <p>Upload required documents directly from DigiLocker or your device. Our AI-powered system verifies documents in seconds — no manual checks needed.</p>
+            <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;">
+              <span class="badge badge-blue">🤖 AI Verification</span>
+              <span class="badge badge-teal">ðŸ“ DigiLocker</span>
+            </div>
+          </div>
+        </div>
+        <div class="step-item" style="border-bottom:none;margin-bottom:0;padding-bottom:0;">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h3>Track & Receive</h3>
+            <p>Get real-time SMS and email updates at every stage. Download digital certificates directly or receive physical documents via speed post.</p>
+            <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;">
+              <span class="badge badge-gold">📲 SMS Alerts</span>
+              <span class="badge badge-success">✉ Email Updates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 7: TESTIMONIALS (Horizontal Scroll)
+═══════════════════════════════════════ -->
+<section class="section" style="background:var(--navy);">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-label">Citizen Stories</div>
+      <h2 class="section-title">What Citizens <span>Say</span></h2>
+      <p class="section-subtitle">Real experiences from real citizens across India</p>
+    </div>
+  </div>
+  <div class="h-scroll-container" style="padding:0 max(24px, calc((100vw - 1280px)/2));" data-aos="fade-up">
+    <div class="h-scroll-track" style="padding:8px 0 24px;">
+      <!-- Testimonial cards -->
+      <div style="min-width:340px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:32px;position:relative;">
+        <div style="font-size:40px;color:var(--gold);margin-bottom:16px;font-family:Georgia,serif;">"</div>
+        <p style="font-size:15px;color:var(--gray-300);line-height:1.8;margin-bottom:24px;">I renewed my passport in just 3 days through GovServices. The process was incredibly smooth and I got SMS updates at every step. Truly a game changer!</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#1E3A8A,#2563EB);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;">R</div>
+          <div><div style="font-weight:700;font-size:14px;">Ramesh Kumar</div><div style="font-size:12px;color:var(--gray-500);">Chennai, Tamil Nadu â­â­â­â­â­</div></div>
+        </div>
+      </div>
+
+      <div style="min-width:340px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:32px;border-color:rgba(245,158,11,0.2);">
+        <div style="font-size:40px;color:var(--gold);margin-bottom:16px;font-family:Georgia,serif;">"</div>
+        <p style="font-size:15px;color:var(--gray-300);line-height:1.8;margin-bottom:24px;">Applied for PM Awas Yojana online and got approved within a week. Earlier this used to take months of running around offices. Stackly GovServices is amazing!</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#0D9488,#14B8A6);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;">P</div>
+          <div><div style="font-weight:700;font-size:14px;">Priya Sharma</div><div style="font-size:12px;color:var(--gray-500);">Pune, Maharashtra â­â­â­â­â­</div></div>
+        </div>
+      </div>
+
+      <div style="min-width:340px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:32px;">
+        <div style="font-size:40px;color:var(--gold);margin-bottom:16px;font-family:Georgia,serif;">"</div>
+        <p style="font-size:15px;color:var(--gray-300);line-height:1.8;margin-bottom:24px;">As a farmer, accessing PM Kisan Samman Nidhi became so easy through this portal. I check my payment status and apply for loans right from my phone. Thank you!</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#10B981,#34D399);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;">M</div>
+          <div><div style="font-weight:700;font-size:14px;">Mahendra Patel</div><div style="font-size:12px;color:var(--gray-500);">Anand, Gujarat â­â­â­â­â­</div></div>
+        </div>
+      </div>
+
+      <div style="min-width:340px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:32px;border-color:rgba(139,92,246,0.2);">
+        <div style="font-size:40px;color:var(--gold);margin-bottom:16px;font-family:Georgia,serif;">"</div>
+        <p style="font-size:15px;color:var(--gray-300);line-height:1.8;margin-bottom:24px;">My daughter's scholarship came through within 2 weeks of applying online. The DigiLocker integration made document submission completely hassle-free.</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#8B5CF6,#A78BFA);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;">A</div>
+          <div><div style="font-weight:700;font-size:14px;">Ananya Reddy</div><div style="font-size:12px;color:var(--gray-500);">Hyderabad, Telangana â­â­â­â­â­</div></div>
+        </div>
+      </div>
+
+      <div style="min-width:340px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:32px;">
+        <div style="font-size:40px;color:var(--gold);margin-bottom:16px;font-family:Georgia,serif;">"</div>
+        <p style="font-size:15px;color:var(--gray-300);line-height:1.8;margin-bottom:24px;">Being a senior citizen, I was hesitant about online services. But GovServices has such a simple interface, I managed to apply for my pension update on my own!</p>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#F59E0B,#FCD34D);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;color:var(--navy-dark);">K</div>
+          <div><div style="font-weight:700;font-size:14px;">Krishnamurthy V.</div><div style="font-size:12px;color:var(--gray-500);">Mysuru, Karnataka â­â­â­â­â­</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 8: NEWS / UPDATES (Timeline)
+═══════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-label">Latest Updates</div>
+      <h2 class="section-title">Government <span>News & Notices</span></h2>
+      <p class="section-subtitle">Stay informed with the latest policy announcements and service updates</p>
+    </div>
+
+    <div class="timeline news-timeline" data-aos="fade-up">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="news-cat">🆕 New Service</div>
+          <div class="news-title">Digital Caste Certificate Now Available Online Across All States</div>
+          <p style="font-size:13px;color:var(--gray-400);line-height:1.6;margin-bottom:10px;">Citizens can now apply for caste certificates online without visiting a tehsildar office. Integrated with DigiLocker for instant verification.</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+            <div class="news-date">📅 July 25, 2026</div>
+            <a href="404.html" class="btn btn-outline btn-sm">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot" style="background:var(--blue-light);box-shadow:0 0 15px rgba(37,99,235,0.5);"></div>
+        <div class="timeline-content">
+          <div class="news-cat" style="color:var(--blue-light);">📣 Policy Update</div>
+          <div class="news-title">PM Kisan 19th Installment Released — ₹6000 to 8.5 Crore Farmers</div>
+          <p style="font-size:13px;color:var(--gray-400);line-height:1.6;margin-bottom:10px;">The 19th installment of PM Kisan Samman Nidhi has been released. Check your beneficiary status through our portal instantly.</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+            <div class="news-date">📅 July 20, 2026</div>
+            <a href="404.html" class="btn btn-outline btn-sm">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot" style="background:var(--teal);box-shadow:0 0 15px rgba(13,148,136,0.5);"></div>
+        <div class="timeline-content">
+          <div class="news-cat" style="color:var(--teal);">ðŸ¥ Health</div>
+          <div class="news-title">Ayushman Bharat Coverage Extended to Senior Citizens Above 70 Years</div>
+          <p style="font-size:13px;color:var(--gray-400);line-height:1.6;margin-bottom:10px;">All senior citizens above 70 years of age are now eligible for ₹5 lakh health cover under Ayushman Bharat Pradhan Mantri Jan Arogya Yojana.</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+            <div class="news-date">📅 July 15, 2026</div>
+            <a href="404.html" class="btn btn-outline btn-sm">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot" style="background:#8B5CF6;box-shadow:0 0 15px rgba(139,92,246,0.5);"></div>
+        <div class="timeline-content">
+          <div class="news-cat" style="color:#a78bfa;">🎓 Education</div>
+          <div class="news-title">National Scholarship Portal 2.0 Launched with AI-Powered Eligibility Check</div>
+          <p style="font-size:13px;color:var(--gray-400);line-height:1.6;margin-bottom:10px;">The revamped NSP 2.0 now uses AI to automatically check and notify eligible students for 120+ scholarship schemes, reducing application time by 80%.</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+            <div class="news-date">📅 July 10, 2026</div>
+            <a href="404.html" class="btn btn-outline btn-sm">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-top:40px;" data-aos="fade-up">
+      <a href="blog.html" class="btn btn-primary">View All Updates →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 9: MINISTRY PARTNERS (Marquee)
+═══════════════════════════════════════ -->
+<section style="padding:60px 0;background:var(--navy);border-top:1px solid var(--glass-border);">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up" style="margin-bottom:40px;">
+      <div class="section-label">Our Partners</div>
+      <h2 class="section-title" style="font-size:32px;">Ministries & <span>Departments</span></h2>
+    </div>
+  </div>
+  <div class="marquee-wrapper">
+    <div class="marquee-track reverse">
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">ðŸ› Ministry of Home Affairs</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">🛡 Ministry of Defence</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">💊 Ministry of Health</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">🎓 Ministry of Education</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">🚗 Ministry of Road Transport</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">🌾 Ministry of Agriculture</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">💰 Ministry of Finance</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">ðŸ— Ministry of Housing</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">ðŸŒ Ministry of Electronics & IT</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">⚡ Ministry of Power</div>
+      <!-- duplicates -->
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">ðŸ› Ministry of Home Affairs</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">🛡 Ministry of Defence</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">💊 Ministry of Health</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">🎓 Ministry of Education</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">🚗 Ministry of Road Transport</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">🌾 Ministry of Agriculture</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">💰 Ministry of Finance</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">ðŸ— Ministry of Housing</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">ðŸŒ Ministry of Electronics & IT</div>
+      <div class="marquee-item" style="font-size:13px;padding:14px 28px;">⚡ Ministry of Power</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 10: CTA REGISTER
+═══════════════════════════════════════ -->
+<section class="section" style="position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(30,58,138,0.4),rgba(245,158,11,0.1));pointer-events:none;"></div>
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,0.15),transparent);pointer-events:none;"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div style="text-align:center;max-width:700px;margin:0 auto;" data-aos="zoom-in">
+      <div style="font-size:60px;margin-bottom:20px;" class="float">🇮🇳</div>
+      <div class="section-label">Get Started Today</div>
+      <h2 class="section-title">Join <span>50 Million+</span> Citizens on Digital India</h2>
+      <p style="font-size:17px;color:var(--gray-300);margin-bottom:40px;line-height:1.7;">Register for free in 2 minutes and access all government services from the comfort of your home. Your digital India journey starts here.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="register.html" class="btn btn-primary btn-lg">📋 Create Free Account</a>
+        <a href="login.html" class="btn btn-outline btn-lg">ðŸ” Sign In</a>
+      </div>
+      <p style="font-size:12px;color:var(--gray-500);margin-top:20px;">🔒 Secured by 256-bit SSL · No spam · Cancel anytime</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-wrap">
+          <div class="logo-icon" style="width:44px;height:44px;background:var(--grad-gold);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--navy-dark);font-weight:900;font-family:'Outfit',sans-serif;">S</div>
+          <span style="font-family:'Outfit',sans-serif;font-size:20px;font-weight:800;">Stack<span class="text-gold">ly</span> GovServices</span>
+        </div>
+        <p>India's premier digital government services portal. Access 500+ services securely from anywhere, anytime. Powered by Stackly Technology.</p>
+        <div class="footer-social">
+          <a href="404.html" class="social-btn" title="Twitter">ðŸ¦</a>
+          <a href="404.html" class="social-btn" title="Facebook">📘</a>
+          <a href="404.html" class="social-btn" title="Instagram">📸</a>
+          <a href="404.html" class="social-btn" title="YouTube">▶</a>
+          <a href="404.html" class="social-btn" title="LinkedIn">💼</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Services</h4>
+        <div class="footer-links">
+          <a href="javascript:void(0)">Passport Apply</a>
+          <a href="javascript:void(0)">Aadhaar Update</a>
+          <a href="javascript:void(0)">Driving Licence</a>
+          <a href="javascript:void(0)">PAN Card</a>
+          <a href="javascript:void(0)">Income Tax</a>
+          <a href="javascript:void(0)">Birth Certificate</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Portal</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="services.html">All Services</a>
+          <a href="blog.html">News & Updates</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">Login</a>
+          <a href="register.html">Register</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Help & Support</h4>
+        <div class="footer-links">
+          <a href="javascript:void(0)">Helpdesk: 1800-111-555</a>
+          <a href="javascript:void(0)">Email Support</a>
+          <a href="javascript:void(0)">FAQs</a>
+          <a href="javascript:void(0)">Privacy Policy</a>
+          <a href="javascript:void(0)">Terms of Service</a>
+          <a href="javascript:void(0)">Accessibility</a>
+        </div>
+        <div style="margin-top:20px;padding:16px;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:12px;">
+          <div style="font-size:12px;color:var(--gray-400);margin-bottom:4px;">Toll Free Helpline</div>
+          <div style="font-size:20px;font-weight:800;color:var(--gold);">1800-111-555</div>
+          <div style="font-size:11px;color:var(--gray-500);">Mon-Sat, 8AM to 8PM</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Stackly GovServices. All rights reserved. Government of India Initiative.</span>
+      <span>Made with â¤ for Digital India by <a href="javascript:void(0)">Stackly Technology</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<div class="scroll-top" id="scroll-top">↑</div>
+
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
