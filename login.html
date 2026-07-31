@@ -19,7 +19,7 @@
   <!-- Back to home -->
   <a href="index.html" style="position:fixed;top:24px;left:24px;display:flex;align-items:center;gap:8px;font-size:14px;color:var(--gray-400);transition:var(--transition);z-index:10;" onmouseenter="this.style.color='var(--gold)'" onmouseleave="this.style.color='var(--gray-400)'">← Back to Home</a>
 
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1000px;width:100%;position:relative;z-index:1;">
+  <div class="grid-2-col" style="display:grid;gap:60px;align-items:center;max-width:1000px;width:100%;position:relative;z-index:1;">
     <!-- Left Side Info -->
     <div style="display:none;" class="auth-info">
     </div>
@@ -98,7 +98,7 @@
 
       <div class="auth-divider"><span>or continue with</span></div>
 
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;">
+      <div class="grid-2-col" style="display:grid;gap:10px;margin-bottom:24px;">
         <button onclick="window.location.href='404.html'" class="btn btn-outline btn-sm" style="justify-content:center;gap:8px;">🪪 Aadhaar OTP</button>
         <button onclick="window.location.href='404.html'" class="btn btn-outline btn-sm" style="justify-content:center;gap:8px;">📱 DigiLocker</button>
       </div>
@@ -110,7 +110,7 @@
       <!-- Demo credentials -->
       <div style="margin-top:20px;padding:14px;background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.15);border-radius:10px;">
         <div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:8px;letter-spacing:1px;text-transform:uppercase;">Demo Credentials</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+        <div class="grid-2-col" style="display:grid;gap:8px;">
           <div style="background:var(--glass-bg);padding:10px;border-radius:8px;">
             <div style="font-size:10px;color:var(--gray-500);margin-bottom:4px;">👤 Citizen</div>
             <div style="font-size:11px;color:var(--gray-300);">Register first to create account</div>
