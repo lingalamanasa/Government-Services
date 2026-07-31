@@ -254,7 +254,7 @@
 
 /* ── MEDIA: Responsive helpers ── */
 @media (max-width: 768px) {
-  .hero-image-wrap { display: none; }
+  .hero-image-wrap { display: flex; margin-top: 40px; }
   .sticky-grid { grid-template-columns: 1fr; }
   .sticky-left { position: relative; top: 0; }
   .blog-featured { grid-template-columns: 1fr; }

@@ -778,3 +778,12 @@ select.form-select option { background-color: #0f172a; color: #f8fafc; }
 @media (max-width: 768px) {
   .grid-4-col, .grid-3-col, .grid-2-col { grid-template-columns: 1fr; }
 }
+
+/* Fix dashboard topbar overflow on mobile */
+@media (max-width: 480px) {
+  .dashboard-topbar { padding: 12px; gap: 8px; flex-wrap: wrap; }
+  .dashboard-topbar > div { gap: 8px !important; }
+  .dashboard-topbar .btn, .dashboard-topbar .btn-logout { font-size: 11px !important; padding: 6px 10px !important; }
+  #topbar-avatar-top { width: 32px !important; height: 32px !important; font-size: 14px !important; }
+  #topbar-title { font-size: 15px !important; }
+}
