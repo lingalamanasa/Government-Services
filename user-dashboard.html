@@ -96,7 +96,7 @@
       </div>
 
       <!-- Quick Stats -->
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:16px;margin-bottom:28px;">
         <div class="dash-stat-card" data-aos="fade-up">
           <div class="dash-stat-icon" style="background:rgba(245,158,11,0.15);">📋</div>
           <div class="dash-stat-value" style="color:var(--gold);">3</div>
@@ -211,7 +211,7 @@
               <button class="btn btn-outline btn-sm">View All</button>
             </div>
             
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative;z-index:2;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:16px;position:relative;z-index:2;">
               <!-- Aadhaar Card -->
               <div style="background:linear-gradient(135deg, rgba(245,158,11,0.15), rgba(217,119,6,0.05));border:1px solid rgba(245,158,11,0.3);border-radius:12px;padding:16px;cursor:pointer;transition:var(--transition);" onmouseenter="this.style.transform='translateY(-3px)'" onmouseleave="this.style.transform='translateY(0)'">
                 <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;">
@@ -270,7 +270,7 @@
           <!-- Quick Apply -->
           <div style="background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:24px;" data-aos="fade-left">
             <div style="font-size:15px;font-weight:700;margin-bottom:16px;">⚡ Quick Apply</div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:10px;">
               <button onclick="window.location.href='404.html'" style="background:rgba(37,99,235,0.1);border:1px solid rgba(37,99,235,0.2);border-radius:10px;padding:14px 10px;display:flex;flex-direction:column;align-items:center;gap:6px;cursor:pointer;transition:var(--transition);" onmouseenter="this.style.borderColor='var(--gold)'" onmouseleave="this.style.borderColor='rgba(37,99,235,0.2)'">
                 <span style="font-size:22px;">🛂</span><span style="font-size:11px;color:var(--gray-300);">Passport</span>
               </button>
@@ -336,14 +336,14 @@
       </div>
 
       <!-- DigiLocker & Subsidies -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:28px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:20px;margin-bottom:28px;">
         <!-- Digital Vault -->
         <div style="background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:24px;" data-aos="fade-up">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
             <div style="font-size:16px;font-weight:700;">ðŸ“ Digital Vault (DigiLocker)</div>
             <button class="btn btn-outline btn-sm">Upload New</button>
           </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:12px;">
             <div style="background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:16px;display:flex;align-items:center;gap:12px;">
               <div style="width:40px;height:40px;border-radius:10px;background:rgba(245,158,11,0.1);display:flex;align-items:center;justify-content:center;font-size:20px;">🪪</div>
               <div><div style="font-size:13px;font-weight:700;">Aadhaar Card</div><div style="font-size:11px;color:var(--success);">Verified</div></div>
@@ -453,7 +453,7 @@
     </div>
     <div id="panel-documents" style="display:none;">
       <h2 style="font-size:24px;font-weight:800;margin-bottom:20px;">ðŸ“ My Documents</h2>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:16px;">
         <div style="background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:20px;text-align:center;cursor:pointer;" onclick="showToastMsg('Aadhaar card downloaded from DigiLocker')"><div style="font-size:44px;margin-bottom:12px;">🪪</div><div style="font-weight:600;margin-bottom:4px;">Aadhaar Card</div><div style="font-size:11px;color:var(--gray-500);">Updated: Jan 2025</div><button class="btn btn-outline btn-sm" style="margin-top:12px;width:100%;">📥 Download</button></div>
         <div style="background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:20px;text-align:center;cursor:pointer;" onclick="showToastMsg('PAN card downloaded!')"><div style="font-size:44px;margin-bottom:12px;">💳</div><div style="font-weight:600;margin-bottom:4px;">PAN Card</div><div style="font-size:11px;color:var(--gray-500);">Issued: 2019</div><button class="btn btn-outline btn-sm" style="margin-top:12px;width:100%;">📥 Download</button></div>
         <div style="background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:var(--radius-lg);padding:20px;text-align:center;cursor:pointer;" onclick="showToastMsg('Marksheet downloaded!')"><div style="font-size:44px;margin-bottom:12px;">📜</div><div style="font-weight:600;margin-bottom:4px;">10th Marksheet</div><div style="font-size:11px;color:var(--gray-500);">CBSE · 2020</div><button class="btn btn-outline btn-sm" style="margin-top:12px;width:100%;">📥 Download</button></div>
@@ -467,7 +467,7 @@
           <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#0D9488,#14B8A6);display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:900;border:3px solid var(--gold);" id="profile-avatar-big2">C</div>
           <div><div style="font-size:20px;font-weight:800;" id="profile-name-big2">Citizen</div><div style="font-size:13px;color:var(--gray-500);margin-top:4px;" id="profile-email-big">citizen@example.com</div><div style="display:flex;gap:8px;margin-top:8px;"><span class="badge badge-success">✓ Verified</span><span class="badge badge-gold">Gold Tier</span></div></div>
         </div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:16px;">
           <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input" id="profile-name-field" /></div>
           <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" id="profile-email-field" /></div>
           <div class="form-group"><label class="form-label">Mobile Number</label><input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX" /></div>
